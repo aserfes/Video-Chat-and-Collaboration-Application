@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9476FF2C-52C6-4C5D-AAB2-49E9B8D98A9A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCENTRIK.WEB.PLATFORM</RootNamespace>
+    <AssemblyName>UCENTRIK.WEB.PLATFORM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Controls\ASP\InfoAboutCall.ascx" />
+    <Content Include="App_Controls\BusinessControls\AgentSkills.ascx" />
+    <Content Include="App_Controls\BusinessControls\AgentLanguages.ascx" />
+    <Content Include="App_Controls\BusinessControls\Incident.ascx" />
+    <Content Include="App_Controls\BusinessControls\Language.ascx" />
+    <Content Include="App_Controls\BusinessControls\LanguageAgent.ascx" />
+    <Content Include="App_Controls\BusinessControls\LanguageProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\SkillAgent.ascx" />
+    <Content Include="App_Controls\BusinessControls\SkillProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\Skill.ascx" />
+    <Content Include="App_Controls\CommonControls\Login.ascx" />
+    <Content Include="App_Controls\CommonControls\LogOnUser.ascx" />
+    <Content Include="App_Controls\CommonControls\RestorePassword.ascx" />
+    <Content Include="App_Controls\ConferenceControls\UCTXControls.ascx" />
+    <Content Include="App_Themes\UCENTRIK\images\ucentrik_logo.jpg" />
+    <Content Include="close.htm" />
+    <Content Include="dirActiveX\UCTX.CAB" />
+    <Content Include="dirAdmin\agents.aspx" />
+    <Content Include="dirAdmin\calls.aspx" />
+    <Content Include="dirAdmin\contacts.aspx" />
+    <Content Include="dirAdmin\default.aspx" />
+    <Content Include="dirAdmin\facilities.aspx" />
+    <Content Include="dirAdmin\groups.aspx" />
+    <Content Include="dirAdmin\questions.aspx" />
+    <Content Include="dirAdmin\settings.aspx" />
+    <Content Include="dirAdmin\surveymanagement.aspx" />
+    <Content Include="dirAdmin\users.aspx" />
+    <Content Include="dirAgent\ScreenShare.aspx" />
+    <Content Include="dirAgent\scrs.aspx" />
+    <Content Include="dirCommon\AsyncUploadFile.aspx" />
+    <Content Include="dirCommon\LogIn.aspx" />
+    <Content Include="dirCommon\RestorePassword.aspx" />
+    <Content Include="dirJavascript\async_upload.js" />
+    <Content Include="dirJavascript\audio.js" />
+    <Content Include="dirJavascript\common.js" />
+    <Content Include="dirJavascript\jquery-1.6.2.min.js" />
+    <Content Include="dirJavascript\jquery-ui.min.js" />
+    <Content Include="dirJavascript\screen.js" />
+    <Content Include="dirJavascript\UCTXControls.js" />
+    <Content Include="dirJavascript\uctx_core.js" />
+    <Content Include="dirJavascript\utils.js" />
+    <Content Include="dirJavascript\video.js" />
+    <Content Include="dirStyle\jquery-ui.css" />
+    <Content Include="dirStyle\LogIn\i\castle.jpg" />
+    <Content Include="dirStyle\LogIn\i\castle.png" />
+    <Content Include="dirStyle\LogIn\i\HiRes.jpg" />
+    <Content Include="dirStyle\LogIn\i\ucentrik_logo.png" />
+    <Content Include="dirStyle\LogIn\i\ucentrik.png" />
+    <Content Include="dirStyle\LogIn\style.css" />
+    <Content Include="dirStyle\slider.css" />
+    <Content Include="dirSupervisor\skills.aspx" />
+    <Content Include="dirSupervisor\agents.aspx" />
+    <Content Include="dirSupervisor\Languages.aspx" />
+    <Content Include="dirAgent\AudioRecordReceiver.aspx" />
+    <Content Include="sounds\alert.wav" />
+    <Content Include="sounds\ding.wav" />
+    <Content Include="Templates\Email\RestorePassword.html" />
+    <Content Include="Templates\HTML\Footer.htm" />
+    <Content Include="Templates\HTML\Header.htm" />
+    <Content Include="Templates\HTML\HomeScreen.htm" />
+    <Content Include="Templates\HTML\SideBar.htm" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Controls\ASP\HandlerLogImage.ashx.cs">
+      <DependentUpon>HandlerLogImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ASP\InfoAboutCall.ascx.cs">
+      <DependentUpon>InfoAboutCall.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ASP\InfoAboutCall.ascx.designer.cs">
+      <DependentUpon>InfoAboutCall.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ASP\EditContact.ascx.cs">
+      <DependentUpon>EditContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ASP\EditContact.ascx.designer.cs">
+      <DependentUpon>EditContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ASP\NoteControl.ascx.cs">
+      <DependentUpon>NoteControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ASP\NoteControl.ascx.designer.cs">
+      <DependentUpon>NoteControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ASP\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ASP\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ASP\TransferIncident.ascx.cs">
+      <DependentUpon>TransferIncident.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ASP\TransferIncident.ascx.designer.cs">
+      <DependentUpon>TransferIncident.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Agent.ascx.cs">
+      <DependentUpon>Agent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Agent.ascx.designer.cs">
+      <DependentUpon>Agent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentGroup.ascx.cs">
+      <DependentUpon>AgentGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentGroup.ascx.designer.cs">
+      <DependentUpon>AgentGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentProfile.ascx.cs">
+      <DependentUpon>AgentProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentProfile.ascx.designer.cs">
+      <DependentUpon>AgentProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Contact.ascx.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Contact.ascx.designer.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\ContactProfile.ascx.cs">
+      <DependentUpon>ContactProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\ContactProfile.ascx.designer.cs">
+      <DependentUpon>ContactProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentSkills.ascx.cs">
+      <DependentUpon>AgentSkills.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentSkills.ascx.designer.cs">
+      <DependentUpon>AgentSkills.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentLanguages.ascx.cs">
+      <DependentUpon>AgentLanguages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\AgentLanguages.ascx.designer.cs">
+      <DependentUpon>AgentLanguages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Incident.ascx.cs">
+      <DependentUpon>Incident.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Incident.ascx.designer.cs">
+      <DependentUpon>Incident.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Language.ascx.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Language.ascx.designer.cs">
+      <DependentUpon>Language.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\LanguageAgent.ascx.cs">
+      <DependentUpon>LanguageAgent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\LanguageAgent.ascx.designer.cs">
+      <DependentUpon>LanguageAgent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\LanguageProfile.ascx.cs">
+      <DependentUpon>LanguageProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\LanguageProfile.ascx.designer.cs">
+      <DependentUpon>LanguageProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SkillAgent.ascx.cs">
+      <DependentUpon>SkillAgent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SkillAgent.ascx.designer.cs">
+      <DependentUpon>SkillAgent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SkillProfile.ascx.cs">
+      <DependentUpon>SkillProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SkillProfile.ascx.designer.cs">
+      <DependentUpon>SkillProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\FacilityGroup.ascx.cs">
+      <DependentUpon>FacilityGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\FacilityGroup.ascx.designer.cs">
+      <DependentUpon>FacilityGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Group.ascx.cs">
+      <DependentUpon>Group.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Group.ascx.designer.cs">
+      <DependentUpon>Group.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\GroupAgent.ascx.cs">
+      <DependentUpon>GroupAgent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\GroupAgent.ascx.designer.cs">
+      <DependentUpon>GroupAgent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\GroupFacility.ascx.cs">
+      <DependentUpon>GroupFacility.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\GroupFacility.ascx.designer.cs">
+      <DependentUpon>GroupFacility.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\GroupProfile.ascx.cs">
+      <DependentUpon>GroupProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\GroupProfile.ascx.designer.cs">
+      <DependentUpon>GroupProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\IncidentProfile.ascx.cs">
+      <DependentUpon>IncidentProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\IncidentProfile.ascx.designer.cs">
+      <DependentUpon>IncidentProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Question.ascx.cs">
+      <DependentUpon>Question.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Question.ascx.designer.cs">
+      <DependentUpon>Question.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\QuestionProfile.ascx.cs">
+      <DependentUpon>QuestionProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\QuestionProfile.ascx.designer.cs">
+      <DependentUpon>QuestionProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Skill.ascx.cs">
+      <DependentUpon>Skill.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Skill.ascx.designer.cs">
+      <DependentUpon>Skill.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Survey.ascx.cs">
+      <DependentUpon>Survey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Survey.ascx.designer.cs">
+      <DependentUpon>Survey.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SurveyProfile.ascx.cs">
+      <DependentUpon>SurveyProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SurveyProfile.ascx.designer.cs">
+      <DependentUpon>SurveyProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SurveyQuestion.ascx.cs">
+      <DependentUpon>SurveyQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\SurveyQuestion.ascx.designer.cs">
+      <DependentUpon>SurveyQuestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\LogOnUser.ascx.cs">
+      <DependentUpon>LogOnUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\LogOnUser.ascx.designer.cs">
+      <DependentUpon>LogOnUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\RestorePassword.ascx.cs">
+      <DependentUpon>RestorePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\RestorePassword.ascx.designer.cs">
+      <DependentUpon>RestorePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ConferenceControls\UCTXControls.ascx.cs">
+      <DependentUpon>UCTXControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ConferenceControls\UCTXControls.ascx.designer.cs">
+      <DependentUpon>UCTXControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CallRouting\AgentRegistration.ascx.cs">
+      <DependentUpon>AgentRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CallRouting\AgentRegistration.ascx.designer.cs">
+      <DependentUpon>AgentRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Facility.ascx.cs">
+      <DependentUpon>Facility.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\Facility.ascx.designer.cs">
+      <DependentUpon>Facility.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\FacilityProfile.ascx.cs">
+      <DependentUpon>FacilityProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\FacilityProfile.ascx.designer.cs">
+      <DependentUpon>FacilityProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\User.ascx.cs">
+      <DependentUpon>User.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\User.ascx.designer.cs">
+      <DependentUpon>User.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\UserProfile.ascx.cs">
+      <DependentUpon>UserProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\BusinessControls\UserProfile.ascx.designer.cs">
+      <DependentUpon>UserProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\UserAccount.ascx.cs">
+      <DependentUpon>UserAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\UserAccount.ascx.designer.cs">
+      <DependentUpon>UserAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CTX\ucCtxTest.ascx.cs">
+      <DependentUpon>ucCtxTest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CTX\ucCtxTest.ascx.designer.cs">
+      <DependentUpon>ucCtxTest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CTX\ucCtxVideo.ascx.cs">
+      <DependentUpon>ucCtxVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CTX\ucCtxVideo.ascx.designer.cs">
+      <DependentUpon>ucCtxVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Elements\DatePicker.ascx.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Elements\DatePicker.ascx.designer.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Elements\GroupRadioButton.ascx.cs">
+      <DependentUpon>GroupRadioButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Elements\GroupRadioButton.ascx.designer.cs">
+      <DependentUpon>GroupRadioButton.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Elements\ReportHeader.ascx.cs">
+      <DependentUpon>ReportHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Elements\ReportHeader.ascx.designer.cs">
+      <DependentUpon>ReportHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Elements\SettingItem.ascx.cs">
+      <DependentUpon>SettingItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Elements\SettingItem.ascx.designer.cs">
+      <DependentUpon>SettingItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Elements\UcMenu.ascx.cs">
+      <DependentUpon>UcMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Elements\UcMenu.ascx.designer.cs">
+      <DependentUpon>UcMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ReportControls\IncidentReport.ascx.cs">
+      <DependentUpon>IncidentReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ReportControls\IncidentReport.ascx.designer.cs">
+      <DependentUpon>IncidentReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ReportControls\SurveyAverageReport.ascx.cs">
+      <DependentUpon>SurveyAverageReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ReportControls\SurveyAverageReport.ascx.designer.cs">
+      <DependentUpon>SurveyAverageReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ReportControls\SurveyReport.ascx.cs">
+      <DependentUpon>SurveyReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ReportControls\SurveyReport.ascx.designer.cs">
+      <DependentUpon>SurveyReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Core\Base\UcAppBaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Core\Base\UcAppBaseLiteControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Core\Base\UcAppBaseOperationalControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Core\Base\UcAppBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Core\Base\UcAppBaseProfileControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Core\Helpers\IncidentHelper.cs" />
+    <Compile Include="App_Core\Helpers\TextHelper.cs" />
+    <Compile Include="App_Core\System\AgentDbPoolRouting.cs" />
+    <Compile Include="App_Core\System\AppBot.cs" />
+    <Compile Include="App_Core\Templates\Templates.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\agents.aspx.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\agents.aspx.designer.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\calls.aspx.cs">
+      <DependentUpon>calls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\calls.aspx.designer.cs">
+      <DependentUpon>calls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\facilities.aspx.cs">
+      <DependentUpon>facilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\facilities.aspx.designer.cs">
+      <DependentUpon>facilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\groups.aspx.cs">
+      <DependentUpon>groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\groups.aspx.designer.cs">
+      <DependentUpon>groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\questions.aspx.cs">
+      <DependentUpon>questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\questions.aspx.designer.cs">
+      <DependentUpon>questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\surveymanagement.aspx.cs">
+      <DependentUpon>surveymanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\surveymanagement.aspx.designer.cs">
+      <DependentUpon>surveymanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAdmin\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAdmin\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\AudioRecordReceiver.aspx.cs">
+      <DependentUpon>AudioRecordReceiver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\ScreenShare.aspx.cs">
+      <DependentUpon>ScreenShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\ScreenShare.aspx.designer.cs">
+      <DependentUpon>ScreenShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\scrs.aspx.cs">
+      <DependentUpon>scrs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\scrs.aspx.designer.cs">
+      <DependentUpon>scrs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirCommon\LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirCommon\LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirCommon\RestorePassword.aspx.cs">
+      <DependentUpon>RestorePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirCommon\RestorePassword.aspx.designer.cs">
+      <DependentUpon>RestorePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirSupervisor\skills.aspx.cs">
+      <DependentUpon>skills.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirSupervisor\skills.aspx.designer.cs">
+      <DependentUpon>skills.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\agents.aspx.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\agents.aspx.designer.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\default3.aspx.cs">
+      <DependentUpon>default3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\default3.aspx.designer.cs">
+      <DependentUpon>default3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\facilities.aspx.cs">
+      <DependentUpon>facilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\facilities.aspx.designer.cs">
+      <DependentUpon>facilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\followupCalls.aspx.cs">
+      <DependentUpon>followupCalls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\followupCalls.aspx.designer.cs">
+      <DependentUpon>followupCalls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\groups.aspx.cs">
+      <DependentUpon>groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\groups.aspx.designer.cs">
+      <DependentUpon>groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\CallQueue.aspx.cs">
+      <DependentUpon>CallQueue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\CallQueue.aspx.designer.cs">
+      <DependentUpon>CallQueue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\myCalls.aspx.cs">
+      <DependentUpon>myCalls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\myCalls.aspx.designer.cs">
+      <DependentUpon>myCalls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\Calls.aspx.cs">
+      <DependentUpon>Calls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\Calls.aspx.designer.cs">
+      <DependentUpon>Calls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirAgent\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirAgent\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirApp\error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirApp\error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirCommon\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirCommon\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirReport\CallReport.aspx.cs">
+      <DependentUpon>CallReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirReport\CallReport.aspx.designer.cs">
+      <DependentUpon>CallReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirReport\SurveyAverageReport.aspx.cs">
+      <DependentUpon>SurveyAverageReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirReport\SurveyAverageReport.aspx.designer.cs">
+      <DependentUpon>SurveyAverageReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirReport\SurveyReport.aspx.cs">
+      <DependentUpon>SurveyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirReport\SurveyReport.aspx.designer.cs">
+      <DependentUpon>SurveyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirSupervisor\agents.aspx.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirSupervisor\agents.aspx.designer.cs">
+      <DependentUpon>agents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirSupervisor\Languages.aspx.cs">
+      <DependentUpon>Languages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirSupervisor\Languages.aspx.designer.cs">
+      <DependentUpon>Languages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirUser\account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirUser\account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirUser\downloads.aspx.cs">
+      <DependentUpon>downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirUser\downloads.aspx.designer.cs">
+      <DependentUpon>downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Core\Utility\MailSender.cs" />
+    <Compile Include="App_Core\Configuration\UcentrikConfiguration.cs" />
+    <Compile Include="App_Core\Extensions\ControlExtensions.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Controls\ASP\EditIncident.ascx.cs">
+      <DependentUpon>EditIncident.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ASP\EditIncident.ascx.designer.cs">
+      <DependentUpon>EditIncident.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\ASP\OpenSession.ascx.cs">
+      <DependentUpon>OpenSession.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\ASP\OpenSession.ascx.designer.cs">
+      <DependentUpon>OpenSession.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UcMasterPage.Master.cs">
+      <DependentUpon>UcMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UcMasterPage.Master.designer.cs">
+      <DependentUpon>UcMasterPage.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\asc.png" />
+    <Content Include="images\button.gif" />
+    <Content Include="images\desc.png" />
+    <Content Include="images\pic1.gif" />
+    <Content Include="images\pic2.gif" />
+    <Content Include="images\spacer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UC_DATASETS\UC_DATASETS.csproj">
+      <Project>{BE2F3F96-AC88-4EED-AC6C-EEFF905C8F55}</Project>
+      <Name>UC_DATASETS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UC_WEB_Lib\UC_LIB.csproj">
+      <Project>{A38D8010-7078-4A2A-9BC7-C0F3B53057C5}</Project>
+      <Name>UC_LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Menu\ADMIN.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Menu\Agent.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Controls\ASP\EditIncident.ascx" />
+    <Content Include="App_Controls\ASP\OpenSession.ascx" />
+    <Content Include="dirHtml\Error.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Controls\BusinessControls\Agent.ascx" />
+    <Content Include="App_Controls\BusinessControls\AgentGroup.ascx" />
+    <Content Include="App_Controls\BusinessControls\AgentProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\Contact.ascx" />
+    <Content Include="App_Controls\BusinessControls\ContactProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\Facility.ascx" />
+    <Content Include="App_Controls\BusinessControls\FacilityGroup.ascx" />
+    <Content Include="App_Controls\BusinessControls\FacilityProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\Group.ascx" />
+    <Content Include="App_Controls\BusinessControls\GroupAgent.ascx" />
+    <Content Include="App_Controls\BusinessControls\GroupFacility.ascx" />
+    <Content Include="App_Controls\BusinessControls\GroupProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\IncidentProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\Question.ascx" />
+    <Content Include="App_Controls\BusinessControls\QuestionProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\Survey.ascx" />
+    <Content Include="App_Controls\BusinessControls\SurveyProfile.ascx" />
+    <Content Include="App_Controls\BusinessControls\SurveyQuestion.ascx" />
+    <Content Include="App_Controls\BusinessControls\User.ascx" />
+    <Content Include="App_Controls\BusinessControls\UserProfile.ascx" />
+    <Content Include="App_Controls\CallRouting\AgentRegistration.ascx" />
+    <Content Include="App_Controls\CommonControls\AccessDenied.ascx" />
+    <Content Include="App_Controls\CommonControls\PageTitle.ascx" />
+    <Content Include="dirAgent\agents.aspx" />
+    <Content Include="dirAgent\contacts.aspx" />
+    <Content Include="dirAgent\facilities.aspx" />
+    <Content Include="dirAgent\groups.aspx" />
+    <Content Include="dirAgent\CallQueue.aspx" />
+    <Content Include="dirAgent\myCalls.aspx" />
+    <Content Include="dirAgent\profile.aspx" />
+    <Content Include="dirAgent\users.aspx" />
+    <Content Include="dirAgent\Calls.aspx" />
+    <Content Include="dirAgent\default.aspx" />
+    <Content Include="dirApp\error.aspx" />
+    <Content Include="dirCommon\default.aspx" />
+    <Content Include="images\UpdateProgress.gif" />
+    <Content Include="sounds\chimes.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Controls\ASP\EditContact.ascx" />
+    <Content Include="App_Controls\ASP\NoteControl.ascx" />
+    <Content Include="App_Controls\ASP\settings.ascx" />
+    <Content Include="App_Controls\ASP\TransferIncident.ascx" />
+    <Content Include="App_Controls\CommonControls\UserAccount.ascx" />
+    <Content Include="App_Controls\ConferenceControls\TextChatControl.ascx" />
+    <Content Include="App_Controls\ConferenceControls\ViewChatControl.ascx" />
+    <Content Include="App_Controls\CTX\ucCtxTest.ascx" />
+    <Content Include="App_Controls\CTX\ucCtxVideo.ascx" />
+    <Content Include="App_Controls\Elements\DatePicker.ascx" />
+    <Content Include="App_Controls\Elements\GroupRadioButton.ascx" />
+    <Content Include="App_Controls\Elements\ReportHeader.ascx" />
+    <Content Include="App_Controls\Elements\SettingItem.ascx" />
+    <Content Include="App_Controls\Elements\UcMenu.ascx" />
+    <Content Include="App_Controls\ReportControls\IncidentReport.ascx" />
+    <Content Include="App_Controls\ReportControls\SurveyAverageReport.ascx" />
+    <Content Include="App_Controls\ReportControls\SurveyReport.ascx" />
+    <Content Include="App_Themes\UCENTRIK\Ajax.css" />
+    <Content Include="App_Themes\UCENTRIK\images\asc.png" />
+    <Content Include="App_Themes\UCENTRIK\images\desc.png" />
+    <Content Include="App_Themes\UCENTRIK\images\FooterBKG.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\headerBKG.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\headerLeft.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\headerRight.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\home.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\home.png" />
+    <Content Include="App_Themes\UCENTRIK\images\h_c6002.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\LevelMenuItem1.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\LevelMenuItem2.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\LevelSelectedMenuItem2.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageBottomCenter.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageBottomLeft.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageBottomRight.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageLeft.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageRight.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageTopCenter.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageTopLeft.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pageTopRight.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\panelBottomBar.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pic1.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\pic2.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\Power_Blue.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\Power_Green.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\Power_Neutral.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\Power_OFF.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\Power_Red.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\Power_Yellow.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\selectedTab.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\separator.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\SidebarBackground.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\sideBarBottom.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\sideBarSeparator.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\sideBarTop.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\statusConnected.png" />
+    <Content Include="App_Themes\UCENTRIK\images\statusProgress.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\TopBar.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\uButton.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\ucentrik_logo.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\unselectedTab.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\update.gif" />
+    <Content Include="App_Themes\UCENTRIK\Main.css" />
+    <Content Include="App_Themes\UCENTRIK\Menu.css" />
+    <Content Include="App_Themes\UCENTRIK\Platform.css" />
+    <Content Include="App_Themes\UCENTRIK\ReportViewer.skin" />
+    <Content Include="App_Themes\UCENTRIK\Site.css" />
+    <Content Include="App_Themes\UCENTRIK\StyleSheet.css" />
+    <Content Include="App_Themes\UCENTRIK\Temp.css" />
+    <Content Include="App_Themes\UCENTRIK\UserControls.css" />
+    <Content Include="default.aspx" />
+    <Content Include="dirAgent\default3.aspx" />
+    <Content Include="dirReport\CallReport.aspx" />
+    <Content Include="dirReport\SurveyAverageReport.aspx" />
+    <Content Include="dirReport\SurveyReport.aspx" />
+    <Content Include="dirUser\account.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="images\lock.png" />
+    <Content Include="images\update.gif" />
+    <Content Include="UcMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Core\Reports\IncidentReport.rdlc" />
+    <Content Include="App_Core\Reports\SurveyAverageReport.rdlc" />
+    <Content Include="App_Core\Reports\SurveyReport.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\UCENTRIK\images\LoginButton.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\LogoutButton.gif" />
+    <Content Include="dirAgent\followupCalls.aspx" />
+    <Content Include="dirUser\downloads.aspx" />
+    <Content Include="images\LoginButtonTemplate.gif" />
+    <Content Include="images\spacer100.gif" />
+    <Content Include="App_Menu\Supervisor.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Controls\ASP\HandlerLogImage.ashx" />
+    <None Include="Diagrams\Platform_BaseClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Controls\MasterControls\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="AudioRecords\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>cd $(SolutionDir)
+copy_javascript.bat</PostBuildEvent>
+    <PreBuildEvent>cd $(SolutionDir)
+xcopy "UC_WEB_Lib\App_Controls\ConferenceControls\*.ascx" "UC_WEB_Platform\App_Controls\ConferenceControls" /e /r /y
+xcopy "UC_WEB_Lib\dirCommon\*.aspx" "UC_WEB_Platform\dirCommon" /e /r /y</PreBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4648</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

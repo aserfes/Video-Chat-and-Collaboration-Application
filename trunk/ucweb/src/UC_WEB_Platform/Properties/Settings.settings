@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UCENTRIK.WEB.PLATFORM.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CrmUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="CrmUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="IgnoreCrm" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CrmServiceUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://licensing.soslivecoach.com/CRM/CRMService.asmx</Value>
+    </Setting>
+    <Setting Name="LoginServiceUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://licensing.soslivecoach.com/CRM/LoginService.asmx</Value>
+    </Setting>
+    <Setting Name="ServerUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">rtmpt://media01.soslivecoach.com:80/SosVideoServer1</Value>
+    </Setting>
+    <Setting Name="Test" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Test #333</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

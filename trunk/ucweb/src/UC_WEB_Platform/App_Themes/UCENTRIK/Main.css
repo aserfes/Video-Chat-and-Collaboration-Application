@@ -1,0 +1,83 @@
+﻿
+
+
+td, th 
+{
+    display: table-cell;
+    font-size: 12;
+}
+
+
+
+.Menu
+{
+    width:220;
+}
+
+
+
+a
+{
+    COLOR: #005989;
+}
+
+.TitleText
+{
+	COLOR: #ffffff;
+    FONT-FAMILY: Tahoma, Verdana;
+    FONT-SIZE: 18px;
+    padding-top:8px;
+    font-weight:bold;
+    text-align:right;
+}
+
+
+.AltText
+{
+	COLOR: #ff0000;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.BusinessControlPanel
+{
+    background:#cde7f8;
+    text-decoration:none;
+}
+
+
+
+
+.InactiveButton
+{
+	COLOR: #000000;
+}
+
+
+.SelectedButton
+{
+	COLOR: #990000;
+    font-weight:bold;
+}
+
+
+
+
+

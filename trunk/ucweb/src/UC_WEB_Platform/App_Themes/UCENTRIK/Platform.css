@@ -1,0 +1,132 @@
+﻿
+#PlatformHome
+{
+    width:180;
+    height:140px;
+    background:url(images/home.gif) no-repeat left top;
+}
+
+
+
+#PlatformPic1
+{
+    width:200px;
+    height:156px;
+    background:url(images/pic1.gif) no-repeat left top;
+}
+
+#PlatformPic2
+{
+    width:200px;
+    height:156px;
+    background:url(images/pic2.gif) no-repeat left top;
+}
+
+
+
+
+
+
+
+#Update
+{
+    width:18px;
+    height:18px;
+    background:url(images/update.gif) no-repeat left top;
+}
+
+
+
+
+
+
+.pageTopLeft
+{
+    background:#cde7f8 url(images/pageTopLeft.gif) repeat-y right top;
+}
+.pageTopCenter
+{
+    background:#cde7f8 url(images/pageTopCenter.gif) repeat-x left top;
+}
+.pageTopRight
+{
+    background:#cde7f8 url(images/pageTopRight.gif) repeat-y left top;
+}
+
+
+.pageLeft
+{
+    background:#cde7f8 url(images/pageLeft.gif) repeat-y right top;
+}
+.pageCenter
+{
+    background:#f7f8fb;
+}
+.pageRight
+{
+    background:#cde7f8 url(images/pageRight.gif) repeat-y left top;
+}
+
+
+.pageBottomLeft
+{
+    background:#cde7f8 url(images/pageBottomLeft.gif) repeat-y right top;
+}
+.pageBottomCenter
+{
+    background:#cde7f8 url(images/pageBottomCenter.gif) repeat-x left top;
+}
+.pageBottomRight
+{
+    background:#cde7f8 url(images/pageBottomRight.gif) repeat-y left top;
+}
+
+.OperatingControlCenter
+{
+    background:#ffffff;
+}
+
+
+
+
+
+
+
+#AgentNotRegistered
+{
+    width:60px;
+    height:60px;
+    background:url(images/Power_OFF.gif) no-repeat left top;
+}
+#AgentAvailable
+{
+    width:60px;
+    height:60px;
+    background:url(images/Power_Green.gif) no-repeat left top;
+}
+#AgentUnavailable
+{
+    width:60px;
+    height:60px;
+    background:url(images/Power_Yellow.gif) no-repeat left top;
+}
+#AgentBusy
+{
+    width:60px;
+    height:60px;
+    background:url(images/Power_Neutral.gif) no-repeat left top;
+}
+#AgentReserved
+{
+    width:60px;
+    height:60px;
+    background:url(images/Power_Red.gif) no-repeat left top;
+}
+#AgentConnected
+{
+    width:60px;
+    height:60px;
+    background:url(images/Power_Blue.gif) no-repeat left top;
+}
+
+

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="c:\inetpub\wwwroot\1\" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="dirJavascript/jsTestCtxFunctions.js" publishTime="06/22/2011 15:19:32" />
+    <file relUrl="App_Controls/MasterControls/FooterControl.ascx" publishTime="08/31/2010 11:52:08" />
+    <file relUrl="App_Controls/CommonControls/PasswordRecovery.ascx" publishTime="02/02/2011 13:47:26" />
+    <file relUrl="bin/UCENTRIK.BLL.pdb" publishTime="06/24/2011 10:33:42" />
+    <file relUrl="bin/UCENTRIK.DATASETS.pdb" publishTime="06/24/2011 10:33:41" />
+    <file relUrl="dirJavascript/GeneralScript.js" publishTime="08/31/2010 11:52:08" />
+    <file relUrl="App_Controls/ConferenceControls/VideoCtxControl.ascx" publishTime="06/23/2011 12:32:02" />
+    <file relUrl="bin/UCENTRIK.DAL.dll" publishTime="06/24/2011 10:33:42" />
+    <file relUrl="App_Controls/ConferenceControls/VideoChatControl.ascx" publishTime="11/24/2010 12:43:36" />
+    <file relUrl="App_Controls/ConferenceControls/CtxAppShareControl.ascx" publishTime="06/23/2011 12:32:02" />
+    <file relUrl="bin/UCENTRIK.DATASETS.dll" publishTime="06/24/2011 10:33:41" />
+    <file relUrl="App_Controls/ConferenceControls/ViewChatControl.ascx" publishTime="02/10/2011 10:50:48" />
+    <file relUrl="App_Controls/ConferenceControls/AppShareControl.ascx" publishTime="10/13/2010 16:16:56" />
+    <file relUrl="App_Controls/CommonControls/Login.ascx" publishTime="06/17/2011 16:26:31" />
+    <file relUrl="bin/UCENTRIK.BLL.dll" publishTime="06/24/2011 10:33:42" />
+    <file relUrl="bin/UCENTRIK.LIB.pdb" publishTime="06/24/2011 10:33:42" />
+    <file relUrl="dirJavascript/jsTestCtxLoad.js" publishTime="06/17/2011 16:36:28" />
+    <file relUrl="dirFlash/SosAppShareControl.swf" publishTime="08/31/2010 11:52:08" />
+    <file relUrl="dirJavascript/AC_OETags.js" publishTime="08/31/2010 11:52:08" />
+    <file relUrl="dirJavascript/jsTestCtxCore.js" publishTime="06/22/2011 14:29:32" />
+    <file relUrl="App_Controls/CommonControls/AccessDenied.ascx" publishTime="08/31/2010 11:52:08" />
+    <file relUrl="dirFlash/StartUp.swf" publishTime="11/15/2010 13:54:00" />
+    <file relUrl="dirFlash/playerProductInstall.swf" publishTime="08/31/2010 11:52:08" />
+    <file relUrl="Web.config" publishTime="12/13/2010 14:13:01" />
+    <file relUrl="bin/UCENTRIK.DAL.pdb" publishTime="06/24/2011 10:33:41" />
+    <file relUrl="favicon.ico" publishTime="08/31/2010 11:52:08" />
+    <file relUrl="App_Controls/ConferenceControls/TextChatControl.ascx" publishTime="10/14/2010 16:02:40" />
+    <file relUrl="bin/UCENTRIK.LIB.dll" publishTime="06/24/2011 10:33:42" />
+    <file relUrl="dirJavascript/jsUCTX.js" publishTime="06/23/2011 16:51:03" />
+    <file relUrl="App_Controls/CommonControls/PageTitle.ascx" publishTime="09/24/2010 10:52:40" />
+  </publishProfile>
+</publishData>

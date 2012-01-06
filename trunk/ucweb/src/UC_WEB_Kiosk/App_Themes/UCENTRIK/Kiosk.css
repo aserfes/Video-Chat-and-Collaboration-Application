@@ -1,0 +1,132 @@
+﻿#Update
+{
+    width:30px;
+    height:30px;
+    background:#355fab url(images/update.gif) no-repeat left top;
+}
+
+.KioskTextBox
+{
+    font-size:16;
+}
+
+.KioskTitle
+{
+    font-size:24;
+    color:Red;  
+    text-align:left;  
+}
+
+.KioskText
+{
+    font-size:16;
+}
+
+.KioskError
+{
+    font-size:32;
+    color:Red;  
+    text-align:center;  
+}
+
+.KioskTextButton
+{
+    font-size:16;
+}
+
+.KioskPanel
+{
+    padding:4px;
+    border-color:Black;
+}
+
+#KioskHome
+{
+    width:700px;
+    height:500px;
+    background:url(images/KioskHome.png) no-repeat left top;
+}
+
+#KioskOpen
+{
+    width:256px;
+    height:256px;
+    background:url(images/KioskOpen.png) no-repeat left top;
+}
+#KioskClosed
+{
+    width:256px;
+    height:256px;
+    background:url(images/KioskClosed.png) no-repeat left top;
+}
+#KioskInactive
+{
+    width:300px;
+    height:300px;
+    background:url(images/KioskInactive.png) no-repeat left top;
+}
+
+#KioskLogin
+{
+    width:256px;
+    height:256px;
+    background:url(images/KioskLogin.png) no-repeat left top;
+}
+
+#KioskWait
+{
+    float: left; 
+    padding-left: 30px;
+}
+
+#KioskWait img 
+{
+    width: 176px;
+}
+
+#KioskError
+{
+    width:300px;
+    height:300px;
+    background:url(images/KioskError.png) no-repeat left top;
+}
+
+#container1 {min-width: 180px; max-width: 340px; background: #fff; margin: 5px; border: 2px solid #1f497d;}
+
+#video {margin: 10px; text-align: center; border: 1px solid #3b587c;}
+#video object {width: 100%; margin: 0px;}
+
+#status {margin: 10px;}
+#status h3 {font-size: 1em; font-weight: bold; color: #1f497d;border: 1px solid #3b587c; background: #eeeded; width: 50px; margin-bottom: 5px; text-align: center;}
+#status_info {border: 1px solid #1f497d; color: #ff0000; padding: 3px; font-size: 1.2em;text-align: left}
+
+#kiosk {margin: 10px; }
+#kiosk_image {float: left; border: 1px solid #3b587c;width: 60%; height: 120px; margin-right: 5px; text-align: center;}
+#kiosk_image object {width: 100%; height: 100%; margin: 0px;}
+#kiosk_status {float: right;font-size: 1em; font-weight: bold; color: #1f497d; border: 1px solid #3b587c; background: #eeeded;text-align: center;}
+
+#chat {margin: 10px; clear: both; padding-top: 10px; *padding-top: 0px; }
+#chat h3 {font-size: 1em; font-weight: bold; color: #1f497d;border: 1px solid #3b587c; background: #eeeded; width: 40px; margin-bottom: 5px; text-align: center;}
+#chat #dialog {width: 100%; height: 130px; border: 1px solid #3b587c; margin-bottom: 5px;} 
+/*#chat #chat_control {margin-bottom: 5px; margin-left: 5px}*/
+#chat .b1 {background: #8d8c8c; float: right; border: 1px solid #3b587c; font-size: .9em; font-weight: bold; color: #1f497d;}
+
+
+#container {width: 600px; height: 330px; background: #fff; }
+
+#left
+{
+    float: left;
+    padding-left: 30px;
+    width:200px;
+    height:317px;
+    background:url(images/KioskWait.jpg) no-repeat left top;
+}
+
+.right {float: right; padding: 120px 70px 0 0;}
+.right h2 {font-size: 1.6em; font-weight: normal;}
+.right .btn {text-align: center; padding: 30px;}
+
+
+
+

@@ -1,0 +1,198 @@
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr { letter-spacing: .16em;}
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+body {
+	font-family: Calibri;
+	background: #ffffff;
+	color: #004e89;
+	height: 100%; 
+}
+
+#header {
+
+	height: 70px;
+	width: 100%;
+
+}
+
+#logo{
+	float: right;
+	margin: 10px 20px;
+}
+
+#logo img {
+	width: 250px;
+}
+
+
+
+
+
+#content {
+
+	width: 300px;
+	margin: 80px auto;
+}
+
+#content p {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+#content_title_left {
+	float: left;
+	margin-right: 20px;
+}
+
+#content_title_right {
+	padding-top: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	
+
+} 
+
+
+#content_text {
+	clear: both;
+	padding-top: 10px;
+}
+
+#login td {
+	text-align: center;
+	width: 120px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 5px;
+}
+
+
+#helper {
+	padding: 10px;
+	font-size: 0.8em;
+    text-align: center;	
+	clear: both;
+	font-weight: bold;
+}
+
+#helper a {
+	color: #004e89;
+}
+
+#helper a:hover {
+	text-decoration: none;
+}
+
+
+
+#footer {
+	background: #dcdcdc;
+	width: 100%;
+	position: fixed; 
+    	left: -20px; bottom: 0;
+	height: 30px; 
+
+}
+
+#menu {
+	float: left;
+	padding-left: 30px;
+	padding-top: 6px;
+	
+}
+
+#menu ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+#menu ul li {
+	list-style: none;
+	float: left; 
+	border-left: 1px solid #666;
+	padding: 0 10px;
+	margin: 0 1px 0 -1px;
+
+}
+
+
+#menu ul li a {
+	text-decoration: none;
+	font-size: 0.8em;
+	color: #666;
+}
+
+#menu ul li a:hover {
+	text-decoration: underline;
+}
+
+#copyright {
+	float: right;
+	color: #666;
+	padding: 8px 10px;
+	font-size: 0.8em;
+}
+
+.errorMessage
+{
+    color: Red;
+}
+
+.customButton { 
+    color: #004e89; 
+    font-family: Verdana; 
+    font-size: 12px; 
+    font-weight: bold; 
+    padding: 3px; 
+}

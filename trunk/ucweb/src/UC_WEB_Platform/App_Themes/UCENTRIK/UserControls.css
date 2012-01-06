@@ -1,0 +1,141 @@
+﻿
+
+
+
+
+.ErrorMessage
+{
+    color:Red;
+}
+.TextMessage
+{
+    color:Green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.TextChatMessageSender
+{
+    color:#0b0b0b;
+    font-weight:bold;
+}
+.TextChatMessageSenderText
+{
+    color:#0b0b0b;}
+.TextChatMessageReceiver
+{
+    color:#005989;
+    font-weight:bold;
+}
+.TextChatMessageReceiverText
+{
+    color:#005989;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TextUnimportant
+{
+    color:#A0A0A0;
+}
+.TextImportant
+{
+    color:#990000;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+.GridView
+{
+    background-color:#ffffff;
+    border-color:#355fab;
+    border-style:solid;
+}
+
+
+.GridViewHeader, .GridViewHeader a, .GridViewHeader a:visited
+{
+    color:#005989;
+    background-color:#96afcf;
+}
+.GridViewHeader a:hover
+{
+    color:#ffffff;
+}
+
+.GridViewPager, .GridViewPager a, .GridViewPager a:visited
+{
+    color:#005989;
+    background-color:#96afcf;
+}
+.GridViewPager a:hover
+{
+    color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+.DetailsView
+{
+    background-color:#ffffff;
+    border-color:#355fab;
+    border-style:solid;
+}
+
+
+
+.separator
+{
+    height:40px;
+    background:#cde7f8 url(images/separator.gif) repeat-x left top;
+}
+
+
+
+
+.ProfilePanel
+{
+    border-color:#cde7f8;
+    border-collapse:collapse;
+    
+    border-width:1px;
+    border-top-width:4px;
+    border-bottom-width:0px;
+    
+    border-style:solid;
+    
+    background:#ffffff;
+}

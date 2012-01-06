@@ -1,0 +1,32 @@
+﻿
+
+
+
+
+p 
+{ 
+	margin: 0px; 
+	width:auto
+}
+
+select 
+{ 
+	width:206px 
+}
+
+
+input[type="text"] 
+{
+    width: 200px;
+}
+
+.equalWidthButton 
+{
+    width: 160px;
+}
+
+fieldset
+{
+	width:auto;
+	margin:5px
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode url="default.aspx#" title="Start"  description="Start">
+
+    <siteMapNode url="~/dirCommon/default.aspx" title="Home"  description="Home" />
+
+
+    <siteMapNode url="dirUser/account.aspx#" title="Account" description="Account">
+      <siteMapNode url="dirUser/account.aspx" title="My Account" description="Account:My Account" />
+      <!--<siteMapNode url="dirUser/downloads.aspx" title="Downloads" description="Account:Downloads" />-->
+    </siteMapNode>
+
+
+    <siteMapNode url="dirAdmin/default.aspx" title="Administration"  description="Administration">
+      <siteMapNode url="dirAdmin/settings.aspx" title="Settings"  description="Administration:Settings" />
+      
+      <siteMapNode url="dirAdmin/users.aspx" title="Users"  description="Administration:Users" />
+      <siteMapNode url="dirAdmin/groups.aspx" title="Groups"  description="Administration:Groups" />
+      <siteMapNode url="dirAdmin/facilities.aspx" title="Facilities"  description="Administration:Facilities" />
+      <siteMapNode url="dirAdmin/agents.aspx" title="Agents"  description="Administration:Agents" />
+    </siteMapNode>
+
+    <siteMapNode url="dirAdmin/calls.aspx#" title="Management"  description="Management">
+      <siteMapNode url="dirAdmin/calls.aspx" title="Calls"  description="Management:Calls" />
+      <siteMapNode url="dirAdmin/contacts.aspx" title="Contacts"  description="Management:Contacts" />
+      <!--<siteMapNode url="dirAdmin/surveymanagement.aspx" title="Survey"  description="Management:Survey" />-->
+      <siteMapNode url="dirAdmin/questions.aspx" title="Questions"  description="Management:Questions" />
+    </siteMapNode>
+
+    <!--<siteMapNode url="dirReport/CallReport.aspx#" title="Reports"  description="Reports">
+      <siteMapNode url="dirReport/CallReport.aspx" title="Call Details"  description="Reports:Call Details" />
+      <siteMapNode url="dirReport/SurveyReport.aspx" title="Survey Report"  description="Reports:Survey Report" />
+      <siteMapNode url="dirReport/SurveyAverageReport.aspx" title="Survey Average Report"  description="Reports:Survey Average Report" />
+    </siteMapNode>-->
+
+    
+
+  </siteMapNode>
+
+
+</siteMap>
+

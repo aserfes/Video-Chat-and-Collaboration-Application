@@ -1,0 +1,82 @@
+﻿
+
+
+td, th 
+{
+    display: table-cell;
+    font-size: 12;
+}
+
+
+
+.Menu
+{
+    width:200;
+}
+
+
+.TitleText
+{
+	COLOR: #990000;
+    FONT-FAMILY: Tahoma, Verdana;
+    FONT-SIZE: 18px;
+    height: 24px;
+    font-weight:bold;
+    text-align:right;
+}
+
+
+#uButton
+{
+    height:141;
+    width:141;
+    background:#ffffff url(images/uButton.gif) no-repeat left top;
+}
+#uButtonDisabled
+{
+    height:141;
+    width:141;
+    background:#ffffff url(images/uButtonDisabled.gif) no-repeat left top;
+}
+
+
+
+#UcentrikLogo
+{
+    height:100;
+    width:613;
+    background:#ffffff url(images/ucentrik_logo.gif) no-repeat left top;
+}
+
+
+
+
+
+
+
+
+.StaticMenuItem, .StaticMenuItem:link, .StaticMenuItem:visited, .StaticMenuItem:active
+{
+	COLOR: #eeeeff;
+    FONT-FAMILY: Tahoma, Verdana;
+    FONT-SIZE: 12px;
+    height: 24px;
+    font-weight:bold;
+}
+
+.HoverMenuItem, .HoverMenuItem:link, .HoverMenuItem:visited, .HoverMenuItem:active
+{
+	COLOR: #eeeeff;
+	text-decoration:none;
+}
+.SelectedMenuItem, .SelectedMenuItem:link, .SelectedMenuItem:visited, .SelectedMenuItem:active
+{
+	COLOR: #000088;
+}
+
+
+.BusinessControlPanel
+{
+    background:#f4f4f4;
+    text-decoration:none;
+}

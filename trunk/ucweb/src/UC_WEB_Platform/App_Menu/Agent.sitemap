@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+	<siteMapNode url="default.aspx#" title="Start"  description="Start">
+
+		<siteMapNode url="~/dirCommon/default.aspx" title="Home"  description="Home" />
+
+		<siteMapNode url="dirAgent/profile.aspx#" title="Agent" description="Agent">
+			<siteMapNode url="dirAgent/profile.aspx" title="My Profile" description="Agent:My Profile" />
+			<siteMapNode url="dirUser/account.aspx" title="My Account" description="Agent:My Account" />
+			<!--<siteMapNode url="dirUser/downloads.aspx" title="Downloads" description="Agent:Downloads" />-->
+		</siteMapNode>
+
+		<siteMapNode url="dirAgent/default.aspx" title="Calls" description="Calls">
+			<siteMapNode url="dirAgent/CallQueue.aspx" title="Call Queue" description="Agent:Call Queue" />
+			<siteMapNode url="dirAgent/myCalls.aspx" title="My Calls" description="Agent:My Calls" />
+			<siteMapNode url="dirAgent/followupcalls.aspx" title="Follow-Up" description="Agent:Follow-Up" />
+			<siteMapNode url="dirAgent/calls.aspx" title="Call History" description="Agent:Call History" />
+		</siteMapNode>
+
+		<siteMapNode url="dirAgent/default3.aspx" title="Environment" description="Environment">
+			<siteMapNode url="dirAgent/facilities.aspx" title="Facilities" description="Agent:Facilities" />
+			<!-->
+			<siteMapNode url="dirAgent/contacts.aspx" title="Contacts" description="Agent:Contacts" />
+			<!-->
+		</siteMapNode>
+
+	</siteMapNode>
+
+</siteMap>

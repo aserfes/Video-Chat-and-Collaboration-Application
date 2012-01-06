@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1E5BDFC-D57C-41AB-AA43-A86D89ACFEAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCENTRIK.BLL</RootNamespace>
+    <AssemblyName>UCENTRIK.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CODE\BllAgent.cs" />
+    <Compile Include="CODE\BllCall.cs" />
+    <Compile Include="CODE\BllChat.cs" />
+    <Compile Include="CODE\BllContact.cs" />
+    <Compile Include="CODE\BllException.cs" />
+    <Compile Include="CODE\BllFacility.cs" />
+    <Compile Include="CODE\BllGroup.cs" />
+    <Compile Include="CODE\BllIncident.cs" />
+    <Compile Include="CODE\BllLog.cs" />
+    <Compile Include="CODE\BllLookup.cs" />
+    <Compile Include="CODE\BllPool.cs" />
+    <Compile Include="CODE\BllQuestion.cs" />
+    <Compile Include="CODE\BllReport.cs" />
+    <Compile Include="CODE\BllSkill.cs" />
+    <Compile Include="CODE\BllSurvey.cs" />
+    <Compile Include="CODE\BllUser.cs" />
+    <Compile Include="CODE\BllLanguage.cs" />
+    <Compile Include="CODE\Helper.cs" />
+    <Compile Include="CODE\BllSettings.cs" />
+    <Compile Include="Kernel\uCSecurity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UC_DAL\UC_DAL.csproj">
+      <Project>{8634DD93-9DA0-46C5-8A0A-3FF663C96323}</Project>
+      <Name>UC_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UC_DATASETS\UC_DATASETS.csproj">
+      <Project>{BE2F3F96-AC88-4EED-AC6C-EEFF905C8F55}</Project>
+      <Name>UC_DATASETS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

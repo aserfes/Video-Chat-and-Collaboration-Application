@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kiosk Integration</title>
+    <script type="text/javascript">
+        function PopupCenter(pageURL, title, w, h) {
+            var left = (screen.width / 2) - (w / 2);
+            var top = (screen.height / 2) - (h / 2);
+            var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=yes, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" 
+            value="Execute Kiosk" 
+            onclick="javascript:PopupCenter('http://localhost/UC_WEB_Kiosk_VS/dirKiosk/default.aspx?skillID=1&langID=1&groupID=1&kioskID=33&kioskName=Central&kioskLocation=Ukraine&userName=kiosk&password=welcome', 'Title', 500, 500)" />
+</body>
+</html>

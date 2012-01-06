@@ -1,0 +1,59 @@
+﻿
+
+
+.ErrorMessage
+{
+    color:Red;
+}
+
+.TextMessage
+{
+    color:Green;
+}
+
+
+
+
+.TextChatMessageSender
+{
+    color:#0b0b0b;
+    font-weight:bold;
+}
+.TextChatMessageSenderText
+{
+    color:#0b0b0b;}
+.TextChatMessageReceiver
+{
+    color:#005989;
+    font-weight:bold;
+}
+.TextChatMessageReceiverText
+{
+    color:#005989;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.GridView
+{
+    background-color:FloralWhite;
+    border-color:Red;
+    border-style:solid;
+}
+
+.DetailsView
+{
+    background-color:FloralWhite;
+    border-color:Red;
+    border-style:solid;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly
+ xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"
+ manifestVersion="1.0"
+ xmlns="urn:schemas-microsoft-com:asm.v2"
+ xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+ xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ >
+  <asmv1:assemblyIdentity name="KioskLauncher.exe" version="1.0.0.0" processorArchitecture="x86" type="win32" />
+  <file name="UCTX.DLL" xmlns="urn:schemas-microsoft-com:asm.v1" asmv2:size="{{size}}">
+    <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>{{hash}}</dsig:DigestValue>
+    </hash>
+    <typelib tlbid="{d0dc16b0-6072-4fe0-93e0-01953c1bf02c}" version="1.0" helpdir="" resourceid="0" flags="HASDISKIMAGE" />
+    <comClass clsid="{748c7ced-885e-4733-ada6-890a0c94cbc6}" threadingModel="Apartment" tlbid="{d0dc16b0-6072-4fe0-93e0-01953c1bf02c}" progid="Wye.UIControl.1" />
+    <comClass clsid="{e604e28f-732b-4c67-9d39-2d6dc9d9010c}" threadingModel="Free" tlbid="{d0dc16b0-6072-4fe0-93e0-01953c1bf02c}" progid="Wye.Console.1" />
+    <comClass clsid="{e9ba40cc-ab0d-4554-88c3-e6b95b86c0fd}" threadingModel="Free" tlbid="{d0dc16b0-6072-4fe0-93e0-01953c1bf02c}" progid="Wye.Util.1" />
+    <comClass clsid="{a0fdd61f-052c-41c8-a8b2-b27e76a9dceb}" threadingModel="Apartment" tlbid="{d0dc16b0-6072-4fe0-93e0-01953c1bf02c}" progid="Wye.UI.1" />
+  </file>
+  <comInterfaceExternalProxyStub name="IBaseObject" iid="{076BD929-A73C-4922-B630-5A4D99538ECF}" tlbid="{D0DC16B0-6072-4FE0-93E0-01953C1BF02C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <comInterfaceExternalProxyStub name="IUIControl" iid="{A6FB84EB-F476-45E1-AF61-66D28C36B285}" tlbid="{D0DC16B0-6072-4FE0-93E0-01953C1BF02C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <comInterfaceExternalProxyStub name="IConsole" iid="{145A7913-8DFD-4D55-9F1F-23FB46AF5D53}" tlbid="{D0DC16B0-6072-4FE0-93E0-01953C1BF02C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <comInterfaceExternalProxyStub name="IUtil" iid="{62B0C785-2719-41C3-94D2-32C2FD9EFFBC}" tlbid="{D0DC16B0-6072-4FE0-93E0-01953C1BF02C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <comInterfaceExternalProxyStub name="IUI" iid="{C97BC463-3584-47E4-92C4-FDA64BCB6615}" tlbid="{D0DC16B0-6072-4FE0-93E0-01953C1BF02C}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" xmlns="urn:schemas-microsoft-com:asm.v1" />
+</asmv1:assembly>

@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A15C4DC6-4D9A-4488-8339-42487842D9A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCENTRIK.WEB.KIOSK</RootNamespace>
+    <AssemblyName>UCENTRIK.WEB.KIOSK</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Controls\ConferenceControls\ViewChatControl.ascx" />
+    <Content Include="App_Controls\Kiosk\Finish.ascx" />
+    <Content Include="App_Controls\Kiosk\LiveConnectAPlus.ascx" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskWait.jpg" />
+    <Content Include="close.htm" />
+    <Content Include="dirActiveX\UCTX.CAB" />
+    <Content Include="dirCommon\AsyncUploadFile.aspx" />
+    <Content Include="dirJavascript\async_upload.js" />
+    <Content Include="dirJavascript\audio.js" />
+    <Content Include="dirJavascript\common.js" />
+    <Content Include="dirJavascript\screen.js" />
+    <Content Include="dirJavascript\uctx_core.js" />
+    <Content Include="dirJavascript\video.js" />
+    <Content Include="dirJavascript\viewChat.js" />
+    <Content Include="dirKioskPage\default.aspx" />
+    <Content Include="dirKioskPage\UcKioskConnect.aspx" />
+    <Content Include="dirKiosk\ScreenShare.aspx" />
+    <Content Include="entry.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Controls\CommonControls\KioskAccessDenied.ascx.cs">
+      <DependentUpon>KioskAccessDenied.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\KioskAccessDenied.ascx.designer.cs">
+      <DependentUpon>KioskAccessDenied.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\Logout.ascx.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\CommonControls\Logout.ascx.designer.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Finish.ascx.cs">
+      <DependentUpon>Finish.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Finish.ascx.designer.cs">
+      <DependentUpon>Finish.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Error.ascx.cs">
+      <DependentUpon>Error.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Error.ascx.designer.cs">
+      <DependentUpon>Error.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Home.ascx.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Home.ascx.designer.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\LiveConnect.ascx.cs">
+      <DependentUpon>LiveConnect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\LiveConnect.ascx.designer.cs">
+      <DependentUpon>LiveConnect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\LiveConnectAPlus.ascx.cs">
+      <DependentUpon>LiveConnectAPlus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\LiveConnectAPlus.ascx.designer.cs">
+      <DependentUpon>LiveConnectAPlus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Survey.ascx.cs">
+      <DependentUpon>Survey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\Survey.ascx.designer.cs">
+      <DependentUpon>Survey.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\WaitScreen.ascx.cs">
+      <DependentUpon>WaitScreen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Kiosk\WaitScreen.ascx.designer.cs">
+      <DependentUpon>WaitScreen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Controls\Survey\KioskSurveyQuestion.ascx.cs">
+      <DependentUpon>KioskSurveyQuestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Controls\Survey\KioskSurveyQuestion.ascx.designer.cs">
+      <DependentUpon>KioskSurveyQuestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Core\Base\UcKioskBaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Core\Base\UcKioskBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirCommon\ucSignIn.aspx.cs">
+      <DependentUpon>ucSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirCommon\ucSignIn.aspx.designer.cs">
+      <DependentUpon>ucSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirKioskPage\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirKioskPage\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirKioskPage\UcKioskConnect.aspx.cs">
+      <DependentUpon>UcKioskConnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirKioskPage\UcKioskConnect.aspx.designer.cs">
+      <DependentUpon>UcKioskConnect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirKiosk\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirKiosk\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirKiosk\ScreenShare.aspx.cs">
+      <DependentUpon>ScreenShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirKiosk\ScreenShare.aspx.designer.cs">
+      <DependentUpon>ScreenShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirKiosk\UcKioskConnect.aspx.cs">
+      <DependentUpon>UcKioskConnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirKiosk\UcKioskConnect.aspx.designer.cs">
+      <DependentUpon>UcKioskConnect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirKiosk\UcKioskLogin.aspx.cs">
+      <DependentUpon>UcKioskLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirKiosk\UcKioskLogin.aspx.designer.cs">
+      <DependentUpon>UcKioskLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirMobile\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirMobile\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dirMobile\pageConnect.aspx.cs">
+      <DependentUpon>pageConnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dirMobile\pageConnect.aspx.designer.cs">
+      <DependentUpon>pageConnect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="entry.asmx.cs">
+      <DependentUpon>entry.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk.Master.cs">
+      <DependentUpon>Kiosk.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk.Master.designer.cs">
+      <DependentUpon>Kiosk.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\asc.png" />
+    <Content Include="images\button.gif" />
+    <Content Include="images\desc.png" />
+    <Content Include="images\pic1.gif" />
+    <Content Include="images\pic2.gif" />
+    <Content Include="images\spacer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UC_DATASETS\UC_DATASETS.csproj">
+      <Project>{BE2F3F96-AC88-4EED-AC6C-EEFF905C8F55}</Project>
+      <Name>UC_DATASETS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UC_WEB_Lib\UC_LIB.csproj">
+      <Project>{A38D8010-7078-4A2A-9BC7-C0F3B53057C5}</Project>
+      <Name>UC_LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dirHtml\Error.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Controls\CommonControls\AccessDenied.ascx" />
+    <Content Include="App_Controls\CommonControls\KioskAccessDenied.ascx" />
+    <Content Include="App_Controls\CommonControls\Login.ascx" />
+    <Content Include="App_Controls\CommonControls\Logout.ascx" />
+    <Content Include="App_Controls\ConferenceControls\TextChatControl.ascx" />
+    <Content Include="App_Controls\Kiosk\Error.ascx" />
+    <Content Include="App_Controls\Kiosk\Home.ascx" />
+    <Content Include="App_Controls\Kiosk\LiveConnect.ascx" />
+    <Content Include="App_Controls\Kiosk\Survey.ascx" />
+    <Content Include="App_Controls\Kiosk\WaitScreen.ascx" />
+    <Content Include="App_Controls\Survey\KioskSurveyQuestion.ascx" />
+    <Content Include="App_Themes\UCENTRIK\Ajax.css" />
+    <Content Include="App_Themes\UCENTRIK\images\bottomLogo.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\header.GIF" />
+    <Content Include="App_Themes\UCENTRIK\images\header1.GIF" />
+    <Content Include="App_Themes\UCENTRIK\images\headerBKG.GIF" />
+    <Content Include="App_Themes\UCENTRIK\images\headerLeft.GIF" />
+    <Content Include="App_Themes\UCENTRIK\images\headerRight.GIF" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskArrow.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskClosed.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskError.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskHome.jpg" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskHome.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskHours.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskInactive.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskLogin.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskOpen.png" />
+    <Content Include="App_Themes\UCENTRIK\images\KioskTemp1.png" />
+    <Content Include="App_Themes\UCENTRIK\images\red_gradient.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\uButton.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\ucentrik_logo.gif" />
+    <Content Include="App_Themes\UCENTRIK\images\update.gif" />
+    <Content Include="App_Themes\UCENTRIK\Kiosk.css" />
+    <Content Include="App_Themes\UCENTRIK\Main.css" />
+    <Content Include="App_Themes\UCENTRIK\Site.css" />
+    <Content Include="App_Themes\UCENTRIK\StyleSheet.css" />
+    <Content Include="App_Themes\UCENTRIK\UserControls.css" />
+    <Content Include="default.aspx" />
+    <Content Include="dirCommon\ucSignIn.aspx" />
+    <Content Include="dirHtml\HTMLPage.htm" />
+    <Content Include="dirKiosk\default.aspx" />
+    <Content Include="dirKiosk\UcKioskConnect.aspx" />
+    <Content Include="dirKiosk\UcKioskLogin.aspx" />
+    <Content Include="dirMobile\default.aspx" />
+    <Content Include="dirMobile\pageConnect.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Kiosk.Master" />
+    <Content Include="robots.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Core\Helpers\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="dirApp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>cd $(SolutionDir)
+rem xcopy "UC_WEB_Lib\App_Controls\ConferenceControls\*.ascx" "UC_WEB_Kiosk\App_Controls\ConferenceControls" /e /r /y
+xcopy "UC_WEB_Lib\dirCommon\*.aspx" "UC_WEB_Kiosk\dirCommon" /e /r /y</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>cd $(SolutionDir)
+copy_javascript.bat</PostBuildEvent>
+  </PropertyGroup>
+</Project>

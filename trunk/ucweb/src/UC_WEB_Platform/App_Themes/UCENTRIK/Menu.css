@@ -1,0 +1,132 @@
+﻿
+
+.Menu
+{
+	background:#dddddd url(images/LevelMenuItem1.gif) no-repeat left top;
+}
+
+.StaticMenuItem, .StaticMenuItem:link, .StaticMenuItem:visited, .StaticMenuItem:active
+{
+	COLOR: #888888;
+    FONT-FAMILY: Tahoma, Verdana;
+    FONT-SIZE: 12px;
+    font-weight:bold;
+    /*line-height:16px;*/
+}
+
+.HoverMenuItem, .HoverMenuItem:link, .HoverMenuItem:visited, .HoverMenuItem:active
+{
+	COLOR: #355fab;
+	text-decoration:none;
+}
+.SelectedMenuItem, .SelectedMenuItem:link, .SelectedMenuItem:visited, .SelectedMenuItem:active
+{
+	COLOR: #355fab;
+}
+
+
+
+
+.LevelMenuItem1, .LevelMenuItem1:link, .LevelMenuItem1:visited, .LevelMenuItem1:active
+{
+    height:16px;
+    width:220px;
+	background:#ffffff url(images/LevelMenuItem1.gif) no-repeat left top;
+}
+.LevelMenuItem2, .LevelMenuItem2:link, .LevelMenuItem2:visited, .LevelMenuItem2:active
+{
+    height:16px;
+    width:220px;
+
+    text-align:left;
+    padding-left:0px;
+    background:#ffffff url(images/LevelMenuItem2.gif) no-repeat left top;
+}
+
+
+
+
+.LevelSelectedMenuItem, .LevelSelectedMenuItem:link, .LevelSelectedMenuItem:visited, .LevelSelectedMenuItem:active
+{
+    background:#ffffff url(images/LevelSelectedMenuItem2.gif) no-repeat left top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.HMenu
+{
+	background:#dddddd;
+	height:30px;
+}
+
+
+
+
+.HStaticMenuItem, .HStaticMenuItem:link, .HStaticMenuItem:visited, .HStaticMenuItem:active
+{
+	COLOR: #888888;
+    FONT-FAMILY: Tahoma, Verdana;
+    FONT-SIZE: 16px;
+    line-height:30px;
+    width:120px;
+    height:30px;
+    
+    background-color:#ffffff;
+    background:url(images/unselectedtab.gif);
+	background-position:left;
+	background-attachment:scroll;
+	font-weight:bold;
+}
+
+.HHoverMenuItem, .HHoverMenuItem:link, .HHoverMenuItem:visited, .HHoverMenuItem:active
+{
+	COLOR: #355fab;
+	text-decoration:none;
+
+    background-color:#ffffff;
+    background:url(images/unselectedtab.gif);
+	background-position:left;
+	background-attachment:scroll;
+	
+	font-weight:bold;
+}
+
+.HSelectedMenuItem, .HSelectedMenuItem:link, .HSelectedMenuItem:visited, .HSelectedMenuItem:active
+{
+	COLOR: #355fab;
+
+    background-color:#ffffff;
+    background:url(images/selectedTab.gif);
+	background-position:left;
+	background-attachment:scroll;
+
+	font-weight:bold;
+}

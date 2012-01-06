@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE2F3F96-AC88-4EED-AC6C-EEFF905C8F55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCENTRIK</RootNamespace>
+    <AssemblyName>UCENTRIK.DATASETS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATASETS\AgentDS.cs">
+      <DependentUpon>AgentDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\AgentDS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgentDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\CallDS.cs">
+      <DependentUpon>CallDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\CallDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\ChatDS.cs">
+      <DependentUpon>ChatDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\ChatDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChatDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\ContactDS.cs">
+      <DependentUpon>ContactDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\ContactDS.Designer.cs">
+      <DependentUpon>ContactDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DATASETS\ExceptionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExceptionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\FacilityDS.Designer.cs">
+      <DependentUpon>FacilityDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DATASETS\GroupDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\IncidentDS.cs">
+      <DependentUpon>IncidentDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\IncidentDS.Designer.cs">
+      <DependentUpon>IncidentDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DATASETS\LanguageDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\LogDS.cs">
+      <DependentUpon>LogDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\LogDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\LookupDS.Designer.cs">
+      <DependentUpon>LookupDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DATASETS\PoolDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoolDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\QuestionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuestionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\ReportDS.cs">
+      <DependentUpon>ReportDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\ReportDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\SettingsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettingsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\SkillDS.cs">
+      <DependentUpon>SkillDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\SkillDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkillDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\SurveyDS.cs">
+      <DependentUpon>SurveyDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\SurveyDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SurveyDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASETS\UserDS.cs">
+      <DependentUpon>UserDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASETS\UserDS.Designer.cs">
+      <DependentUpon>UserDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DATASETS\AgentDS.xsc">
+      <DependentUpon>AgentDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\AgentDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>AgentDS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\AgentDS.xss">
+      <DependentUpon>AgentDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\CallDS.xsc">
+      <DependentUpon>CallDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\CallDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CallDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\CallDS.xss">
+      <DependentUpon>CallDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ChatDS.xsc">
+      <DependentUpon>ChatDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ChatDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChatDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\ChatDS.xss">
+      <DependentUpon>ChatDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ContactDS.xsc">
+      <DependentUpon>ContactDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ContactDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContactDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\ContactDS.xss">
+      <DependentUpon>ContactDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ExceptionDS.xsc">
+      <DependentUpon>ExceptionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ExceptionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExceptionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\ExceptionDS.xss">
+      <DependentUpon>ExceptionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\FacilityDS.xsc">
+      <DependentUpon>FacilityDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\FacilityDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FacilityDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\FacilityDS.xss">
+      <DependentUpon>FacilityDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\GroupDS.xsc">
+      <DependentUpon>GroupDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\GroupDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\GroupDS.xss">
+      <DependentUpon>GroupDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\IncidentDS.xsc">
+      <DependentUpon>IncidentDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\IncidentDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IncidentDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\IncidentDS.xss">
+      <DependentUpon>IncidentDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\LanguageDS.xsc">
+      <DependentUpon>LanguageDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\LanguageDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LanguageDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\LanguageDS.xss">
+      <DependentUpon>LanguageDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\LogDS.xsc">
+      <DependentUpon>LogDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\LogDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LogDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\LogDS.xss">
+      <DependentUpon>LogDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\LookupDS.xsc">
+      <DependentUpon>LookupDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\LookupDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LookupDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\LookupDS.xss">
+      <DependentUpon>LookupDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\PoolDS.xsc">
+      <DependentUpon>PoolDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\PoolDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PoolDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\PoolDS.xss">
+      <DependentUpon>PoolDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\QuestionDS.xsc">
+      <DependentUpon>QuestionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\QuestionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuestionDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\QuestionDS.xss">
+      <DependentUpon>QuestionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ReportDS.xsc">
+      <DependentUpon>ReportDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\ReportDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\ReportDS.xss">
+      <DependentUpon>ReportDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\SettingsDS.xsc">
+      <DependentUpon>SettingsDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\SettingsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SettingsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\SettingsDS.xss">
+      <DependentUpon>SettingsDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\SkillDS.xsc">
+      <DependentUpon>SkillDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\SkillDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SkillDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\SkillDS.xss">
+      <DependentUpon>SkillDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\SurveyDS.xsc">
+      <DependentUpon>SurveyDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\SurveyDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SurveyDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\SurveyDS.xss">
+      <DependentUpon>SurveyDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\UserDS.xsc">
+      <DependentUpon>UserDS.xsd</DependentUpon>
+    </None>
+    <None Include="DATASETS\UserDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASETS\UserDS.xss">
+      <DependentUpon>UserDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

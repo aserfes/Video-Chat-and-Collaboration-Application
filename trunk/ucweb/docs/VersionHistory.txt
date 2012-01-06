@@ -1,0 +1,69 @@
+
+Version 1.0.0.0 13.09.2011
+------------------------
+[-] Bug#904: EcoATM :  It is possible to enter not numeric value to the Phone number field
+[-] Bug#906: EcoATM : Agent views only quantity of  languages after  My Profile is selected
+[-] Bug#907: EcoATM:  Agent can not view skills and languages in "Call Queue" menu when caller is calling
+[-] Bug#908: EcoATM: Rendering of video has bad quality of display resolution and color space. 
+[-] Bug#909: EcoATM: Incident name of web page should be renamed Call
+[-] Bug#910: EcoATM: Supervisor is logged out after password is changed by admin user
+[-] Bug#911: EcoATM: New survey is not applied for selected Kiosk
+[-] Bug#912: EcoATM: Transaction Completion check box is not checked
+[-] Bug#913: EcoATM: New agent is added without username and password after Add button is used by admin user on Agent web page
+[-] Bug: It is impossible to add new Facilities
+
+Version 1.0.0.0 14.09.2011
+------------------------
+[-] Bug “Events KeyDown are not fired during screen remote control”
+[-] Settings was improved. Unused items were removed.
+
+Version 1.0.0.0 13.10.2011
+------------------------
+[+] Start audio and video (at default setting) by default
+[+] Remove Public enabled check box from agent’s view
+[+] Rename the Supervisor link User Setup 
+[+] I added indicator during remote control.
+[+] I added tooltip to CS, Platfrom and Kiosk settings.
+[-] Skill is spelled wrong on the actual tab (Skil instead of Skills)
+
+Version 1.0.0.0 06.10.2011
+------------------------
+[+] Features and fixes required to apply are in bold. Features from To Do List for Aplus - October 5.docx
+[+] Add new groups:     DCF_MOD_QAQC –  for Real Time Auditors
+			DCF_MOD_Tier2 –  for General Enquiries
+			DCF_MOD_Tier2_French –  for General Enquiries ( in French )
+			DCF_MOD_Tier3 –  for Technical Enquiries 
+			DCF_MOD_Tier3_French –  for Technical Enquiries ( in French )
+			DCF_MOD_Training –  for Training Enquiries
+			DCF_MOD_Training_French –  for Training Enquiries ( in French )
+[+] Features from a-plus estimate.mmap
+
+
+Version 1.0.0.0 19.10.2011
+------------------------
+[+] Redesign of UCTX control
+[+] LogIn page and password restore feature
+
+Version 1.0.0.0 21.10.2011
+------------------------
+[+] Interface Design
+[+] Priority 1 - These are the required video settings: Low, Medium, High
+
+[-] The selected size of  Kiosk video and Own video is not visible completely.
+[-] Log on button is disabled on agent page.
+[-] When I’m logged in and click home it’s logging me out instead of returning me to the home screen.
+
+Version 1.0.0.0 28.10.2011
+------------------------
+[+] Kiosk Interface Design
+
+[-] Bug: Kiosk setting is updated after user updates platform setting with same name.
+[-] Bug#970: A-Plus: User can log in under the agent account after his account is deleted.
+[-] Bug#971: A-Plus: Agent could not save his phone number after editing."
+
+Version 1.0.0.0 02.11.2011
+------------------------
+[-] You are being connected to the next available agent – should fit on 2 lines – right now it’s split into 3
+[-] Hang-up doesn’t fit in the buttons (we need to discuss interface)
+[-] Agent interface – fitting in text chat (900 vertical is the max)
+

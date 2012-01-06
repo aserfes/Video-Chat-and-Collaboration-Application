@@ -1,0 +1,341 @@
+﻿
+body
+{
+    font-family: Verdana, Tahoma;
+    font-size:10px;
+    
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+    margin-right:5px;
+    
+    background:#005989;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Header_OLD
+{
+    height:65px;
+    background:#ffffff url(images/Header.gif) no-repeat left top;
+}
+#Header
+{
+    height:65px;
+    background:#ffffff url(images/HeaderBKG.gif) repeat-x left top;
+}
+#HeaderLeft
+{
+    height:65px;
+    width:280px;
+    background:#ffffff url(images/HeaderLeft.gif) repeat-x left top;
+}
+#HeaderRight
+{
+    height:65px;
+    width:100px;
+    background:#ffffff url(images/HeaderRight.gif) repeat-x left top;
+}
+
+
+
+
+
+
+
+
+
+
+
+.TopBar
+{
+    color:#484848;
+	font-size:12px;   
+	font-family:Tahoma;
+	font-weight:bold;
+
+    border-color:#8e8e8e;
+    border-top-width:0px;
+    border-left-width:1px;
+    border-right-width:1px;
+    border-bottom-width:0px;
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#dadada;
+}
+
+
+
+
+
+.TitleBar
+{
+	color:#990000;
+    font-size:14pt;
+    font-family:Tahoma;
+    font-weight:bold;
+    text-align:center;
+}
+
+
+
+.Title
+{
+    color:#484848;
+	font-size:14px;   
+	font-family:Tahoma;
+	font-weight:bold;
+}
+
+.Note
+{
+    color:#484848;
+	font-size:12px;   
+	font-family:Tahoma;
+	font-weight:bold;
+}
+
+.SubNote, .SubNote a, .SubNote a:visited
+{
+    color:#828282;
+	font-size:12px;   
+	font-family:Tahoma;
+	font-weight:bold;
+	text-decoration: none;
+}
+.SubNote a:hover
+{
+    color:#990000;    
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
+.Footer, .Footer a, .Footer a:visited
+{
+    color:#242424;
+	font-size:11px;   
+	font-family:Tahoma;
+}
+.Footer a:hover
+{
+    color:#990000;
+}
+
+
+.FooterSeparatorLine
+{
+    color:#242424;
+	font-size:11px;   
+	font-family:Tahoma;
+	
+    width:100%;
+    border-bottom:#990000 1px solid;
+}
+
+
+#FooterLogo
+{
+    width:95px;
+    height:36px;
+    background:#dadada;
+}
+
+
+
+.FooterBottom
+{
+    border-color:#8e8e8e;
+    
+    border-top-width:0px;
+    border-left-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#dadada;
+}
+
+
+
+
+
+
+
+.sidemenu
+{
+    color:#ffffff;
+	font-size:13px;
+	font-family:Tahoma;
+	font-weight:bold;
+	text-align:center;
+}
+.sidesubmenu
+{
+    color:#ffffff;
+	font-size:12px;
+	font-family:Tahoma;
+	text-align:center;
+}
+
+.sideBar
+{
+	border-color:#8e8e8e;
+    
+    border-top-width:0px;
+    border-left-width:0px;
+    border-right-width:1px;
+    border-bottom-width:0px;
+    
+    border-collapse:collapse;
+    border-style:solid;
+
+	background:#990000;
+}
+
+
+
+
+
+#WorkSpace
+{
+	height:100%;
+    font-family:Tahoma,Verdana;
+    margin-top:0px;
+    margin-left:0px;
+    background:#ffffff;
+}
+
+
+
+
+
+
+.PageBodyFull
+{
+    border-color:#8e8e8e;
+    
+    border-top-width:0px;
+    border-left-width:1px;
+    border-right-width:1px;
+    border-bottom-width:0px;
+    
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#dadada;
+}
+
+
+
+.PageBody
+{
+    border-color:#8e8e8e;
+    
+    border-top-width:0px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#dadada;
+}
+
+
+.PageBodyLeft
+{
+    border-color:#8e8e8e;
+    
+    border-top-width:0px;
+    border-left-width:1px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#dadada;
+}
+.PageBodyRight
+{
+    border-color:#8e8e8e;
+    
+    border-top-width:0px;
+    border-left-width:0px;
+    border-right-width:1px;
+    border-bottom-width:0px;
+    
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#dadada;
+}
+
+
+
+
+
+.PageBodyTest
+{
+    background:#efefef;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.WorkPanel
+{
+    border-color:#8e8e8e;
+    border-width:1px;
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#ffffff;
+}
+

@@ -1,0 +1,359 @@
+﻿
+body
+{
+    height:100%;
+    font-family: Verdana, Tahoma;
+    font-size:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    background:#ffffff;
+}
+
+
+
+
+
+table.full-height
+{
+    height:100%;
+    width:100%;
+    border:0px solid black;
+}
+
+
+
+
+
+.Report
+{
+    text-align:center;
+    border-color:#006699;
+    border-style:solid;
+    border-width:1px;
+}
+.ReportHeader
+{
+    background-color:#f0f8ff;
+}
+.ReportViewer
+{
+}
+
+
+
+
+#ReportBody
+{
+    height:100%;
+    background-color:#f0f8ff;    
+}
+
+
+
+
+
+
+
+
+#Header
+{
+    height:40px;
+    background:#ffffff url(images/HeaderBKG.gif) repeat-x left top;
+}
+#HeaderLeft
+{
+    height:40px;
+    width:280px;
+    background:#ffffff url(images/HeaderLeft.gif) no-repeat left top;
+}
+#HeaderRight
+{
+    height:40px;
+    width:300px;
+    cursor:pointer;
+    background:#ffffff url(images/ucentrik-logo.jpg) no-repeat left top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TopBar
+{
+    height:65px;
+    background:#cde7f8 url(images/TopBar.gif) repeat-x left top;
+}
+
+
+
+
+
+
+
+
+.TitleBar
+{
+	color:#cde7f8;
+    font-size:14pt;
+    font-family:Tahoma;
+    font-weight:bold;
+    text-align:center;
+}
+
+
+
+.Title
+{
+    color:#484848;
+	font-size:14px;   
+	font-family:Tahoma;
+	font-weight:bold;
+}
+
+.Note
+{
+    color:#484848;
+	font-size:12px;   
+	font-family:Tahoma;
+	font-weight:bold;
+}
+
+.SubNote, .SubNote a, .SubNote a:visited
+{
+    color:#828282;
+	font-size:12px;   
+	font-family:Tahoma;
+	font-weight:bold;
+	text-decoration: none;
+}
+.SubNote a:hover
+{
+    color:#cde7f8;    
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Footer
+{
+    height:20px;
+    background:#cccccc url(images/FooterBKG.gif) repeat-x left top;
+}
+
+
+.Footer, .Footer a, .Footer a:visited
+{
+    color:#242424;
+	font-size:11px;   
+	font-family:Tahoma;
+}
+.Footer a:hover
+{
+    color:#cde7f8;
+}
+
+
+
+
+
+
+
+
+
+.sidemenu
+{
+	COLOR: #888888;
+    FONT-FAMILY: Tahoma, Verdana;
+    FONT-SIZE: 12px;
+    height: 24px;
+    font-weight:bold;
+	text-align:center;    
+}
+
+
+
+
+
+
+
+
+.sideBarTop
+{
+    height:30px;
+    background:#cde7f8 url(images/sidebarTop.gif) repeat-y left top;
+}
+.sideBar
+{
+    background:#cde7f8 url(images/sidebarBackground.gif) repeat-y left top;
+}
+.sideBarSeparator
+{
+    height:65px;
+    background:#ffffff url(images/sideBarSeparator.gif) no-repeat left top;
+}
+.sideBarBottom
+{
+    height:40px;
+    background:#cde7f8 url(images/sidebarBottom.gif) repeat-y left top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#WorkSpace
+{
+	height:100%;
+    font-family:Tahoma,Verdana;
+    margin-top:0px;
+    margin-left:0px;
+    background:#ffffff;
+}
+
+
+
+
+
+
+
+.PageBody
+{
+    border-color:#8e8e8e;
+    
+    border-top-width:0px;
+    border-left-width:1px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    
+    border-collapse:collapse;
+    border-style:solid;
+    
+    background:#dadada;
+}
+
+
+
+
+.WorkPanel
+{
+    border-color:#8e8e8e;
+    border-collapse:collapse;
+    border-width:0px;
+    
+    background:#dadada;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#FooterImageBKG
+{
+    height:1px;
+    background:#ffffff;
+}
+#FooterImageLeft
+{
+    height:1px;
+    width:400px;
+    background:#ffffff;
+}
+#FooterImageRight
+{
+    height:1px;
+    width:400px;
+    cursor:pointer;
+    background:#ffffff;
+}
+
+
+
+.ImageButtonLogin
+{
+    height:22px;
+    width:100px;
+    background:#000000 url(images/LoginButton.gif) no-repeat left top;
+}
+.ImageButtonLogout
+{
+    height:22px;
+    width:100px;
+    background:#000000 url(images/LogoutButton.gif) no-repeat left top;
+}
+
+
+
+
+
+
+.UcLink, .UcLink a, .UcLink a:visited
+{
+    color:#ff0000;
+	font-size:12px;   
+	font-family:Tahoma;
+	font-weight:bold;
+	text-decoration: none;
+}
+.UcLink a:hover
+{
+    color:#ffffff;    
+    text-decoration:underline;
+}
+
+
+
+
+

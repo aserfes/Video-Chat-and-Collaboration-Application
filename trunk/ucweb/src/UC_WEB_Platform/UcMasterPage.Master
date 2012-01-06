@@ -1,0 +1,260 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UcMasterPage.master.cs"
+    Inherits="UCENTRIK.WEB.PLATFORM.UcMasterPage" %>
+
+<%@ Register TagPrefix="ucentrik" TagName="LogOn" Src="App_Controls/CommonControls/LogOnUser.ascx" %>
+<%@ Register TagPrefix="ucentrik" TagName="Menu" Src="App_Controls/Elements/UcMenu.ascx" %>
+<%@ Register TagPrefix="ucentrik" TagName="AccessDenied" Src="App_Controls/CommonControls/AccessDenied.ascx" %>
+<%@ Register TagPrefix="ucentrik" TagName="AgentRegistration" Src="App_Controls/CallRouting/AgentRegistration.ascx" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html style="width: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head" runat="server">
+    <title>UCENTRIK WEB PLATFORM</title>
+    <asp:ContentPlaceHolder ID="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="bodytag" style="height: 100%;">
+    <form id="formMain" runat="server">
+    <asp:Panel ID="Panel1" runat="server">
+    </asp:Panel>
+    <asp:ScriptManager ID="UcScriptManager" runat="server" OnAsyncPostBackError="ucScriptManager_AsyncPostBackError">
+    </asp:ScriptManager>
+    <div>
+        <table width="100%" height="100%" align="center" cellspacing="0" cellpadding="0"
+            border="0" style="height: 100%;">
+            <!-- ## -------------------------------- header ----------------------------------------------- ##-->
+            <thead>
+                <tr height="10">
+                    <td>
+                        <asp:Literal ID="ltHeader" runat="server"></asp:Literal>
+                    </td>
+                </tr>
+            </thead>
+            <!-- ## -------------------------------- header ----------------------------------------------- ##-->
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" class="PageBody">
+                        <asp:Panel ID="pnlBody" runat="server" CssClass="WorkPanel" Width="100%" Height="100%">
+                            <table width="100%" height="100%" align="center" cellspacing="0" cellpadding="0"
+                                border="0">
+                                <!-- ## ------------------------------- menu & workspace -------------------------------------- ##-->
+                                <tr height="100%">
+                                    <td valign="top" nowrap align="center" width="280">
+                                        <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr height="30px" class="sideBarTop">
+                                                <td>
+                                                    <br />
+                                                </td>
+                                            </tr>
+                                            <tr height="1px" class="sideBar">
+                                                <td align="center">
+                                                    <asp:UpdatePanel ID="upSystemTimer" runat="server" UpdateMode="Conditional">
+                                                        <ContentTemplate>
+                                                            <asp:Timer ID="timerRefresh" runat="server" Interval="5000" OnTick="timerRefresh_Tick">
+                                                            </asp:Timer>
+                                                            <asp:Label ID="lblTimer" runat="server" Text=""></asp:Label>
+                                                        </ContentTemplate>
+                                                    </asp:UpdatePanel>
+                                                </td>
+                                            </tr>
+                                            <tr height="50px" class="sideBar">
+                                                <td align="center" valign="top">
+                                                    <asp:UpdatePanel ID="upMenu" runat="server" UpdateMode="Conditional">
+                                                        <ContentTemplate>
+                                                            <ucentrik:Menu ID="ucSideMenu" runat="server" />
+                                                        </ContentTemplate>
+                                                    </asp:UpdatePanel>
+                                                </td>
+                                            </tr>
+                                            <asp:Panel ID="Panel3" runat="server" Visible="true">
+                                                <tr class="sideBarSeparator">
+                                                    <td>
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr height="25px" class="sideBar">
+                                                    <td align="center" valign="bottom">
+                                                        <asp:Literal ID="ltSideBar" runat="server"></asp:Literal>
+                                                    </td>
+                                                </tr>
+                                            </asp:Panel>
+                                           <%-- <tr height="5px" class="sideBar">
+                                                <td>
+                                                    <br />
+                                                </td>
+                                            </tr>--%>
+                                            <tr height="25px" class="sideBar">
+                                                <td align="center" valign="bottom">
+                                                    <table width="100%" height="1px" cellspacing="1" cellpadding="0" border="0">
+                                                        <tr height="5px">
+                                                            <td align="center" valign="bottom">
+                                                                <asp:UpdatePanel ID="upVideoChat" runat="server" UpdateMode="Conditional">
+                                                                    <ContentTemplate>
+                                                                        <asp:ContentPlaceHolder ID="UCTXControls" runat="server">
+                                                                        </asp:ContentPlaceHolder>
+                                                                    </ContentTemplate>
+                                                                </asp:UpdatePanel>
+                                                            </td>
+                                                            <td width="2px">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr class="sideBar">
+                                                <td>
+                                                    <br />
+                                                </td>
+                                            </tr>
+                                            <tr height="25px" class="sideBarBottom">
+                                                <td>
+                                                    <br />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!-- ----------------------------------------------- SB ---------- -->
+                                    <td valign="top" nowrap>
+                                        <div id="WorkSpace">
+                                            <table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                <tr height="2">
+                                                    <td class="TopBar">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tr valign="bottom">
+                                                                <td>
+                                                                    &nbsp;&nbsp;
+                                                                </td>
+                                                                <td align="left" nowrap>
+                                                                    <table width="240px" cellpadding="0" cellspacing="0" border="0">
+                                                                        <tr height="20">
+                                                                            <td align="right">
+                                                                                <asp:UpdatePanel ID="upAgentRegistration" runat="server" UpdateMode="Conditional">
+                                                                                    <ContentTemplate>
+                                                                                        <ucentrik:AgentRegistration ID="AgentRegistration" runat="server" Active="false" />
+                                                                                    </ContentTemplate>
+                                                                                </asp:UpdatePanel>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <asp:Literal ID="ltHeaderText" runat="server">
+                                                                                </asp:Literal>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td align="right" nowrap>
+                                                                    <ucentrik:LogOn ID="ucLogOn" runat="server"
+                                                                            LogOnUrl="~/dirCommon/LogIn.aspx" 
+                                                                            RedirectOnLogOffUrl="~/dirCommon/LogIn.aspx" 
+                                                                            OnLoggingOut="ucLogOn_LoggingOut"/>
+                                                                </td>
+                                                                <td>
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr height="0px">
+                                                    <td class="BusinessControlPanel">
+                                                        <asp:Panel ID="pnlControlsPlaceHolder" runat="server" Visible="false">
+                                                            <asp:ContentPlaceHolder ID="ControlsPlaceHolder" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </asp:Panel>
+                                                    </td>
+                                                </tr>
+                                                <!-- ----------------------------------------------- WS begin -------- -->
+                                                <tr height="100%">
+                                                    <td align="center" valign="top" nowrap class="BusinessControlPanel">
+                                                        <table width="90%" height="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tr height="24">
+                                                                <td valign="top" align="right" nowrap width="1%">
+                                                                    <img src="../images/spacer.gif" width="16px" height="10px" border="0" />
+                                                                </td>
+                                                                <td valign="top" align="center" nowrap>
+                                                                    <img src="../images/spacer.gif" width="820px" height="10px" border="0" />
+                                                                </td>
+                                                                <td valign="top" align="left" nowrap width="1%">
+                                                                    <img src="../images/spacer.gif" width="16px" height="10px" border="0" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr height="40">
+                                                                <td class="pageTopLeft">
+                                                                </td>
+                                                                <td class="pageTopCenter" valign="top" nowrap>
+                                                                    <asp:UpdatePanel ID="upPageTitle" runat="server" UpdateMode="Conditional">
+                                                                        <Triggers>
+                                                                            <asp:AsyncPostBackTrigger ControlID="OperatingPlaceHolder" />
+                                                                        </Triggers>
+                                                                        <ContentTemplate>
+                                                                            <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+                                                                            </asp:ContentPlaceHolder>
+                                                                        </ContentTemplate>
+                                                                    </asp:UpdatePanel>
+                                                                </td>
+                                                                <td class="pageTopRight">
+                                                                </td>
+                                                            </tr>
+                                                            <tr height="100%">
+                                                                <td class="pageLeft">
+                                                                    <img src="../images/spacer.gif" width="1px" height="400px" border="0" />
+                                                                </td>
+                                                                <td class="pageCenter" valign="top" nowrap>
+                                                                    <table width="100%" height="100%" cellspacing="5" cellpadding="5" border="0">
+                                                                        <tr>
+                                                                            <td align="center" valign="top">
+                                                                                <asp:UpdatePanel ID="upBusinessControlPanel" runat="server" UpdateMode="Conditional">
+                                                                                    <ContentTemplate>
+                                                                                        <asp:ContentPlaceHolder ID="OperatingPlaceHolder" runat="server">
+                                                                                        </asp:ContentPlaceHolder>
+                                                                                    </ContentTemplate>
+                                                                                </asp:UpdatePanel>
+                                                                                <ucentrik:AccessDenied ID="AccessDenied" runat="server" Visible="false" />
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="pageRight">
+                                                                    <img src="../images/spacer.gif" width="1px" height="400px" border="0" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr height="20">
+                                                                <td class="pageBottomLeft">
+                                                                </td>
+                                                                <td class="pageBottomCenter">
+                                                                </td>
+                                                                <td class="pageBottomRight">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- ----------------------------------------------- WS end ---------- -->
+                                                <tr height="24">
+                                                    <td class="BusinessControlPanel">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </asp:Panel>
+                    </td>
+                </tr>
+            </tbody>
+            <!-- ## -------------------------------- footer ----------------------------------------------- ##-->
+            <tfoot>
+                <tr height="20px" class="Footer">
+                    <td align="center">
+                        <asp:Literal ID="ltFooter" runat="server"></asp:Literal>
+                    </td>
+                </tr>
+            </tfoot>
+            <!-- ## -------------------------------- footer ----------------------------------------------- ##-->
+        </table>
+    </div>
+    </form>
+</body>
+</html>

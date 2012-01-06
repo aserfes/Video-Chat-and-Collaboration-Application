@@ -1,0 +1,23 @@
+﻿<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+    Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+
+
+    <rsweb:ReportViewer runat="server"
+        BackColor="#f0f8ff"
+
+
+        InternalBorderColor="#006699"
+        InternalBorderStyle="Solid"
+        InternalBorderWidth="1"
+
+
+        ToolBarItemBorderColor="Red"
+        ToolBarItemBorderStyle="Solid"
+        ToolBarItemBorderWidth="1"
+        
+        ToolBarItemPressedBorderColor="Red"
+        ToolBarItemPressedBorderStyle="Solid"
+        ToolBarItemPressedBorderWidth="1"
+
+    >
+    </rsweb:ReportViewer>
