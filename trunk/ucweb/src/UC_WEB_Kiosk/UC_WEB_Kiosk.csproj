@@ -282,7 +282,6 @@
     <Content Include="App_Controls\Kiosk\WaitScreen.ascx" />
     <Content Include="App_Controls\Survey\KioskSurveyQuestion.ascx" />
     <Content Include="App_Themes\UCENTRIK\Ajax.css" />
-    <Content Include="App_Themes\UCENTRIK\images\bottomLogo.gif" />
     <Content Include="App_Themes\UCENTRIK\images\header.GIF" />
     <Content Include="App_Themes\UCENTRIK\images\header1.GIF" />
     <Content Include="App_Themes\UCENTRIK\images\headerBKG.GIF" />

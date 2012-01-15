@@ -107,7 +107,7 @@
     <Content Include="dirStyle\LogIn\i\castle.jpg" />
     <Content Include="dirStyle\LogIn\i\castle.png" />
     <Content Include="dirStyle\LogIn\i\HiRes.jpg" />
-    <Content Include="dirStyle\LogIn\i\ucentrik_logo.png" />
+    <Content Include="dirStyle\LogIn\i\ucentrik-logo.png" />
     <Content Include="dirStyle\LogIn\i\ucentrik.png" />
     <Content Include="dirStyle\LogIn\style.css" />
     <Content Include="dirStyle\slider.css" />
