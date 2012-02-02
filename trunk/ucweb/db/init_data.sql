@@ -1,12 +1,8 @@
 /****** Object:  Table [dbo].[uc_group]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_group] ON
-INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, N'f971eeb7-22d3-429b-8d8c-0244fabdf8a0', N'DCF_MOD_QAQC', NULL, 0, CAST(0x00009F7400D04740 AS DateTime), CAST(0x00009F7400D05567 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (2, N'36518fd2-eaab-4aae-afd4-43a1c39d859f', N'DCF_MOD_Tier2 ', NULL, 0, CAST(0x00009F7400D05916 AS DateTime), CAST(0x00009F7400D05A14 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (3, N'96b9db6f-7217-4e56-98fe-46d3a64a6e27', N'DCF_MOD_Tier2_French ', NULL, 0, CAST(0x00009F7400D065DD AS DateTime), CAST(0x00009F7400D066C4 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (4, N'c465dd4b-2124-4e40-9c8e-0cbaf8f6808b', N'DCF_MOD_Tier3 ', NULL, 0, CAST(0x00009F7400D06E99 AS DateTime), CAST(0x00009F7400D06FC8 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (5, N'd3491bb9-4af6-4ea0-bbe5-69795271571c', N'DCF_MOD_Tier3_French ', NULL, 0, CAST(0x00009F7400D077C7 AS DateTime), CAST(0x00009F7400D07947 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (6, N'19589f36-d196-487a-ab73-dd77269ab9dd', N'DCF_MOD_Training ', NULL, 0, CAST(0x00009F7400D0820E AS DateTime), CAST(0x00009F7400D082E5 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (7, N'4a996a86-3623-4459-b1d4-861f56743423', N'DCF_MOD_Training_French ', NULL, 0, CAST(0x00009F7400D08C84 AS DateTime), CAST(0x00009F7400D08DC3 AS DateTime), NULL, 0)
+INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, NEWID(), N'Support', NULL, 0, GETUTCDATE(), NULL, NULL, 0)
+INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (2, NEWID(), N'Training', NULL, 0, GETUTCDATE(), NULL, NULL, 0)
+INSERT [dbo].[uc_group] ([group_id], [group_guid], [group_name], [description], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (3, NEWID(), N'Demo', NULL, 0, GETUTCDATE(), NULL, NULL, 0)
 SET IDENTITY_INSERT [dbo].[uc_group] OFF
 /****** Object:  Table [dbo].[lu_user_role]    Script Date: 07/14/2011 12:19:41 ******/
 INSERT [dbo].[lu_user_role] ([user_role_id], [user_role_name]) VALUES (1, N'Administrator')
@@ -32,19 +28,18 @@ INSERT [dbo].[lu_call_status] ([call_status_id], [call_status_name]) VALUES (4, 
 /****** Object:  Table [dbo].[uc_language]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_language] ON
 INSERT [dbo].[uc_language] ([language_id], [language_name]) VALUES (1, N'English')
-INSERT [dbo].[uc_language] ([language_id], [language_name]) VALUES (2, N'German')
-INSERT [dbo].[uc_language] ([language_id], [language_name]) VALUES (3, N'Russian')
-INSERT [dbo].[uc_language] ([language_id], [language_name]) VALUES (4, N'Ukrainian')
+INSERT [dbo].[uc_language] ([language_id], [language_name]) VALUES (2, N'French')
+INSERT [dbo].[uc_language] ([language_id], [language_name]) VALUES (3, N'Spanish')
 SET IDENTITY_INSERT [dbo].[uc_language] OFF
 /****** Object:  Table [dbo].[uc_survey]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_survey] ON
-INSERT [dbo].[uc_survey] ([survey_id], [survey_guid], [survey_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, N'6e848f07-6208-4c3d-823a-70cc46845b51', N'CSS', CAST(0x00009D45010C5259 AS DateTime), NULL, NULL, 0)
+INSERT [dbo].[uc_survey] ([survey_id], [survey_guid], [survey_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, NEWID(), N'CSS', GETUTCDATE(), NULL, NULL, 0)
 SET IDENTITY_INSERT [dbo].[uc_survey] OFF
 /****** Object:  Table [dbo].[uc_skill]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_skill] ON
-INSERT [dbo].[uc_skill] ([skill_id], [skill_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, N'ASP.NET', CAST(0x000007D200000000 AS DateTime), CAST(0x00009F1D00CD26D8 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_skill] ([skill_id], [skill_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (2, N'PHP', CAST(0x000007D200000000 AS DateTime), NULL, NULL, 0)
-INSERT [dbo].[uc_skill] ([skill_id], [skill_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (3, N'COM', CAST(0x000007D200000000 AS DateTime), NULL, NULL, 0)
+INSERT [dbo].[uc_skill] ([skill_id], [skill_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, N'Support', GETUTCDATE(), GETUTCDATE(), NULL, 0)
+INSERT [dbo].[uc_skill] ([skill_id], [skill_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (2, N'Training', GETUTCDATE(), NULL, NULL, 0)
+INSERT [dbo].[uc_skill] ([skill_id], [skill_name], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (3, N'Demo', GETUTCDATE(), NULL, NULL, 0)
 SET IDENTITY_INSERT [dbo].[uc_skill] OFF
 /****** Object:  Table [dbo].[uc_settings]    Script Date: 10/12/2011 17:23:42 ******/
 INSERT [dbo].[uc_settings] ([name], [category], [value], [tooltip]) VALUES (N'AudioDeviceID', N'KIOSK', N'0', N'Index of audio device that it''s used to capture audio data. ')
@@ -90,70 +85,60 @@ INSERT [dbo].[uc_settings] ([name], [category], [value], [tooltip]) VALUES (N'Vi
 INSERT [dbo].[uc_settings] ([name], [category], [value], [tooltip]) VALUES (N'UrlIndex', N'CTX_SERVER', N'http://webdemo.ucentrik.com/index/IndexServer.svc', N'Platform and Kiosk use this url to access index server.')
 /****** Object:  Table [dbo].[uc_question]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_question] ON
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, N'AAA', 2, CAST(0x00009D45010F2615 AS DateTime), CAST(0x00009D4501107393 AS DateTime), CAST(0x00009D450111544E AS DateTime), 1)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (2, N'TEST1', 2, CAST(0x00009D45011B517A AS DateTime), CAST(0x00009D45011B60FD AS DateTime), CAST(0x00009D45011D25C2 AS DateTime), 1)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (3, N'dfghdfg', 1, CAST(0x00009D45011D20DE AS DateTime), NULL, CAST(0x00009D45011D26DB AS DateTime), 1)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (4, N'dg', 1, CAST(0x00009D45011D2C5E AS DateTime), NULL, CAST(0x00009D45011D2E6B AS DateTime), 1)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (5, N'Comments', 1, CAST(0x00009D45011D40BB AS DateTime), NULL, NULL, 0)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (6, N'Overall experience', 3, CAST(0x00009D45011D4F11 AS DateTime), NULL, NULL, 0)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (7, N'Would you reccomend that to friend?', 2, CAST(0x00009D45011D6652 AS DateTime), NULL, NULL, 0)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (8, N'_TEST QUESTION #1', 1, CAST(0x00009D4F014155F8 AS DateTime), CAST(0x00009D4F01460354 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (9, N'_TEST QUESTION #2', 2, CAST(0x00009D4F01415D12 AS DateTime), CAST(0x00009D4F01460AB9 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (10, N'_TEST QUESTION #3', 3, CAST(0x00009D4F014164AC AS DateTime), CAST(0x00009D4F01461164 AS DateTime), NULL, 0)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (11, N'qwerty', 1, CAST(0x00009D5E013828B2 AS DateTime), NULL, CAST(0x00009D5E01382C7C AS DateTime), 1)
-INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (12, N'11111', 2, CAST(0x00009E2B013BE252 AS DateTime), NULL, CAST(0x00009E2B013BE62F AS DateTime), 1)
+INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, N'Comments', 1, CAST(0x00009D45011D40BB AS DateTime), NULL, NULL, 0)
+INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (2, N'Overall experience', 3, CAST(0x00009D45011D4F11 AS DateTime), NULL, NULL, 0)
+INSERT [dbo].[uc_question] ([question_id], [question_text], [type_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (3, N'Would you reccomend that to friend?', 2, CAST(0x00009D45011D6652 AS DateTime), NULL, NULL, 0)
 SET IDENTITY_INSERT [dbo].[uc_question] OFF
 /****** Object:  Table [dbo].[uc_user]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_user] ON
-INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (1, N'de3d7627-b1df-42af-b887-c7daa25b93ea', N'Top', N'Administrator', N'administrator', N'Vrdw2WXDNZcRWWGOQjCgDQ==', N'', 1, N'Eastern Standard Time', 31, 0, CAST(0x00009F1E00B7CD31 AS DateTime), CAST(0x00009D4501094DDF AS DateTime), CAST(0x00009DDB012A1205 AS DateTime), NULL, 0, 0)
-INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (2, N'dcaef347-0b5b-45a3-b700-76760d167031', N'Andrew', N'Dallas', N'agent', N'Pg+U81hnUoKNSFbzEIUrgg==', N'', 2, N'Eastern Standard Time', 1222, 0, CAST(0x00009F2000978EF2 AS DateTime), CAST(0x00009D450109831A AS DateTime), CAST(0x00009F1200702A58 AS DateTime), NULL, 0, 0)
-INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (4, N'ca1258cb-0f74-4284-a8cb-8a41e8ec278e', N'Demo', N'Kiosk', N'kiosk', N'ktP1OTwCkKn5tV9Hjje3lA==', N'', 3, N'Eastern Standard Time', 656390, 0, CAST(0x00009F20008EA039 AS DateTime), CAST(0x00009D450109BD38 AS DateTime), CAST(0x00009DDB012D62BF AS DateTime), NULL, 0, 0)
-INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (6, N'58ebcab5-7d52-483b-94ba-ecedaff927c6', N'Admin', N'Admin', N'admin', N'hX1V04AhuZMB8A1MpX1uuQ==', N'', 1, N'Eastern Standard Time', 552, 0, CAST(0x00009F2000924631 AS DateTime), CAST(0x00009D45010AF703 AS DateTime), CAST(0x00009E470166AE66 AS DateTime), NULL, 0, 0)
-INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (7, N'23d80749-9317-4474-909f-af4ff7aaa4fe', N'Super', N'Demo', N'super', N'Zkc1ndiMZvnfxWW5wNRPOQ==', N'', 5, N'Eastern Standard Time', 53, 0, CAST(0x00009F4300B92EC3 AS DateTime), CAST(0x00009F2500D3A555 AS DateTime), NULL, NULL, 0, 0)
+INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (1, NEWID(), N'Demo', N'Kiosk', N'kiosk', N'BOSGuVCn6dbCbP2qxlkvYQ==', N'', 3, N'Eastern Standard Time', 0, 0, NULL, GETUTCDATE(), NULL, NULL, 0, 0)
+INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (2, NEWID(), N'Agent', N'One', N'Agent1', N'vZTG0ZnkOvoX9uYTyElzmA==', N'', 2, N'Eastern Standard Time', 0, 0, NULL, GETUTCDATE(), NULL, NULL, 0, 0)
+INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (3, NEWID(), N'Agent', N'Two', N'Agent2', N'7/WO3NHyzkY9Bgh8/rytPA==', N'', 2, N'Eastern Standard Time', 0, 0, NULL, GETUTCDATE(), NULL, NULL, 0, 0)
+INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (4, NEWID(), N'Agent', N'Three', N'Agent3', N'qzMfwVYMFgIampxexRcj3A==', N'', 2, N'Eastern Standard Time', 0, 0, NULL, GETUTCDATE(), NULL, NULL, 0, 0)
+INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (5, NEWID(), N'Administrator', N'One', N'Admin', N'+reiDxgKewV4w8HkwJLddwuOZOX+YNY8IZ51GPNOb8M=', N'', 1, N'Eastern Standard Time', 0, 0, NULL, GETUTCDATE(), NULL, NULL, 0, 0)
+INSERT [dbo].[uc_user] ([user_id], [user_guid], [first_name], [last_name], [username], [password], [password_salt], [user_role_id], [time_zone], [logins], [login_attempts], [date_last_login], [date_created], [date_updated], [date_deleted], [is_locked_out], [is_deleted]) VALUES (6, NEWID(), N'Supervisor', N'One', N'Super', N'o30hFr6hCz5wJZzqre+GMg==', N'', 5, N'Eastern Standard Time', 0, 0, NULL, GETUTCDATE(), NULL, NULL, 0, 0)
 SET IDENTITY_INSERT [dbo].[uc_user] OFF
 /****** Object:  Table [dbo].[uc_survey_question]    Script Date: 07/14/2011 12:19:41 ******/
-INSERT [dbo].[uc_survey_question] ([survey_id], [question_id]) VALUES (1, 5)
-INSERT [dbo].[uc_survey_question] ([survey_id], [question_id]) VALUES (1, 6)
-INSERT [dbo].[uc_survey_question] ([survey_id], [question_id]) VALUES (1, 7)
+INSERT [dbo].[uc_survey_question] ([survey_id], [question_id]) VALUES (1, 1)
+INSERT [dbo].[uc_survey_question] ([survey_id], [question_id]) VALUES (1, 2)
+INSERT [dbo].[uc_survey_question] ([survey_id], [question_id]) VALUES (1, 3)
 /****** Object:  Table [dbo].[uc_agent]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_agent] ON
-INSERT [dbo].[uc_agent] ([agent_id], [agent_guid], [user_id], [first_name], [last_name], [email], [phone], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, N'9180840e-2cb7-45f0-83ff-0ce9fc311c4a', 2, N'Andrew', N'Dallas', N'noname@nomail.com', N'416-504-0000', 1, CAST(0x00009D45010A8701 AS DateTime), CAST(0x00009E160154ED27 AS DateTime), NULL, 0)
+INSERT [dbo].[uc_agent] ([agent_id], [agent_guid], [user_id], [first_name], [last_name], [email], [phone], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, NEWID(), 2, N'Agent', N'One', N'', N'', 1, GETUTCDATE(), NULL, NULL, 0)
+INSERT [dbo].[uc_agent] ([agent_id], [agent_guid], [user_id], [first_name], [last_name], [email], [phone], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (2, NEWID(), 3, N'Agent', N'Two', N'', N'', 1, GETUTCDATE(), NULL, NULL, 0)
+INSERT [dbo].[uc_agent] ([agent_id], [agent_guid], [user_id], [first_name], [last_name], [email], [phone], [public_enabled], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (3, NEWID(), 4, N'Agent', N'Three', N'', N'', 1, GETUTCDATE(), NULL, NULL, 0)
 SET IDENTITY_INSERT [dbo].[uc_agent] OFF
 /****** Object:  Table [dbo].[uc_facility]    Script Date: 07/14/2011 12:19:41 ******/
 SET IDENTITY_INSERT [dbo].[uc_facility] ON
-INSERT [dbo].[uc_facility] ([facility_id], [active], [facility_guid], [ip_address], [user_id], [facility_name], [address], [phone], [survey_id], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, 1, N'c37915be-85eb-4768-8ec7-724219d898b2', NULL, 4, N'Demo Kiosk', N'345 Adelaide', N'416-504-0000', 1, CAST(0x00009D45010A4AED AS DateTime), CAST(0x00009E30013BC0DD AS DateTime), NULL, 0)
+INSERT [dbo].[uc_facility] ([facility_id], [active], [facility_guid], [ip_address], [web_referrer], [user_id], [facility_name], [address], [phone], [survey_id], [agent_id], [status], [status_stamp], [command], [command_stamp], [date_created], [date_updated], [date_deleted], [is_deleted]) VALUES (1, 1, NEWID(), NULL, NULL, 1, N'Demo Kiosk', N'', N'', NULL, NULL, NULL, NULL, NULL, NULL, GETUTCDATE(), NULL, NULL, 0)
 SET IDENTITY_INSERT [dbo].[uc_facility] OFF
-SET IDENTITY_INSERT [dbo].[uc_incident] OFF
 /****** Object:  Table [dbo].[uc_group_facility]    Script Date: 07/14/2011 12:19:41 ******/
 INSERT [dbo].[uc_group_facility] ([group_id], [facility_id]) VALUES (1, 1)
 INSERT [dbo].[uc_group_facility] ([group_id], [facility_id]) VALUES (2, 1)
 INSERT [dbo].[uc_group_facility] ([group_id], [facility_id]) VALUES (3, 1)
-INSERT [dbo].[uc_group_facility] ([group_id], [facility_id]) VALUES (4, 1)
-INSERT [dbo].[uc_group_facility] ([group_id], [facility_id]) VALUES (5, 1)
-INSERT [dbo].[uc_group_facility] ([group_id], [facility_id]) VALUES (6, 1)
-INSERT [dbo].[uc_group_facility] ([group_id], [facility_id]) VALUES (7, 1)
 /****** Object:  Table [dbo].[uc_group_agent]    Script Date: 07/14/2011 12:19:41 ******/
 INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (1, 1)
-INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (2, 1)
-INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (3, 1)
-INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (4, 1)
-INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (5, 1)
-INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (6, 1)
-INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (7, 1)
+INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (2, 2)
+INSERT [dbo].[uc_group_agent] ([group_id], [agent_id]) VALUES (3, 3)
 /****** Object:  Table [dbo].[uc_call]    Script Date: 07/14/2011 12:19:41 ******/
 /****** Object:  Table [dbo].[uc_agent_skill]    Script Date: 07/14/2011 12:19:41 ******/
 INSERT [dbo].[uc_agent_skill] ([agent_id], [skill_id]) VALUES (1, 1)
-INSERT [dbo].[uc_agent_skill] ([agent_id], [skill_id]) VALUES (1, 3)
-INSERT [dbo].[uc_agent_skill] ([agent_id], [skill_id]) VALUES (1, 2)
+INSERT [dbo].[uc_agent_skill] ([agent_id], [skill_id]) VALUES (2, 2)
+INSERT [dbo].[uc_agent_skill] ([agent_id], [skill_id]) VALUES (3, 3)
 /****** Object:  Table [dbo].[uc_agent_language]    Script Date: 07/14/2011 12:19:41 ******/
 INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (1, 1)
 INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (1, 2)
 INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (1, 3)
+INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (2, 1)
+INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (2, 2)
+INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (2, 3)
+INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (3, 1)
+INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (3, 2)
+INSERT [dbo].[uc_agent_language] ([agent_id], [language_id]) VALUES (3, 3)
 /****** Object:  Table [dbo].[uc_contact_state]    Script Date: 07/14/2011 12:19:41 ******/
 /****** Object:  Table [dbo].[uc_contact_listing]    Script Date: 07/14/2011 12:19:41 ******/
 /****** Object:  Table [dbo].[uc_survey_response]    Script Date: 07/14/2011 12:19:41 ******/
 /****** Object:  Table [dbo].[uc_incident_transfer]    Script Date: 07/14/2011 12:19:41 ******/
 /****** Object:  Table [dbo].[uc_incident_note]    Script Date: 07/14/2011 12:19:41 ******/
 /****** Object:  Table [dbo].[uc_pool]    Script Date: 07/14/2011 12:19:41 ******/
-INSERT [dbo].[uc_pool] ([agent_id], [is_available], [is_busy], [last_call_time], [incident_id], [date_created], [date_accessed], [date_reserved]) VALUES (1, 0, 0, CAST(0x00009F2000981BD7 AS DateTime), NULL, CAST(0x00009F20008EB9B1 AS DateTime), CAST(0x00009F2000993F9D AS DateTime), CAST(0x00009F2000981BCA AS DateTime))
 /****** Object:  Table [dbo].[uc_log]    Script Date: 07/14/2011 12:19:41 ******/
