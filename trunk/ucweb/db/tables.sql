@@ -200,7 +200,7 @@ BEGIN
 CREATE TABLE [dbo].[uc_settings](
 	[name] [varchar](50) NOT NULL,
 	[category] [varchar](50) NOT NULL,
-	[value] [nvarchar](255) NOT NULL,
+	[value] [nvarchar](512) NOT NULL,
 	[tooltip] [nvarchar](512) NULL,
  CONSTRAINT [PK_uc_settings] PRIMARY KEY CLUSTERED 
 (

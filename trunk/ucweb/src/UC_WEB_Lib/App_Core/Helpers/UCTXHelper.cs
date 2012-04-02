@@ -24,7 +24,7 @@ namespace UCENTRIK.LIB.Helpers
 					, ss[ 3 ]
 					, ProxyHelper.GetSettingValueString( "TimerSpan", "CTX_SERVER" )
 					, ProxyHelper.GetSettingValueString( "DifFrameCount", "CTX_SERVER" )
-					, string.Empty
+					, ProxyHelper.GetSettingValueString( "ServerApiKey", "CTX_SERVER" )
 					);
 
 				ScriptManager.RegisterClientScriptBlock(page, page.GetType(), "setConferenceSetting", script, true);

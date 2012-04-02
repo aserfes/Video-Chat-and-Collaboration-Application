@@ -4705,7 +4705,7 @@ EXEC dbo.sp_executesql @statement = N'CREATE Procedure [usp_settings_set]
 (
 @name		varchar(50),
 @category	varchar(50),
-@value		nvarchar(255)
+@value		nvarchar(512)
 )
 AS
  
